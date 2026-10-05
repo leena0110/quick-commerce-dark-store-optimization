@@ -1,0 +1,49 @@
+{
+  "dataset_overview": {
+    "total_records": 105872,
+    "unique_orders": 34700,
+    "unique_products": 58,
+    "unique_customers": 4994,
+    "avg_basket_size": 3.05,
+    "avg_order_value": 258.35
+  },
+  "top_5_products": {
+    "Milk (1L)": 7777,
+    "Tomato (500g)": 6482,
+    "Curd (400g)": 6397,
+    "Onion (1kg)": 6343,
+    "Potato (1kg)": 6260
+  },
+  "category_demand": {
+    "Fruits & Vegetables": 34046,
+    "Dairy": 30303,
+    "Staples": 17294,
+    "Beverages": 16952,
+    "Bakery": 13586,
+    "Instant & Frozen": 13167,
+    "Snacks": 12764,
+    "Personal Care": 7157,
+    "Household": 5222
+  },
+  "top_5_features": [
+    "Product_Hist_Avg_Demand",
+    "Category_Hist_Avg_Demand",
+    "Store_Orders_Roll_Mean_7d",
+    "Day_of_Week",
+    "Demand_Roll_Std_7d"
+  ],
+  "best_model": "Random Forest",
+  "best_model_metrics": {
+    "R\u00b2": 0.371,
+    "MAE": 1.3322,
+    "MSE": 3.3606,
+    "RMSE": 1.8332
+  },
+  "key_insights": [
+    "Peak hours (7-9 AM, 6-9 PM) account for 52.2% of total daily demand; replenishment attention should prioritize these periods.",
+    "Weekend demand is 23.1% higher per day than weekday demand; replenishment schedules should account for this weekend surge.",
+    "Fruits & Vegetables is the highest-demand category with 34,046 units; high-velocity categories should receive greater forecasting priority.",
+    "The Random Forest model achieves R\u00b2 = 0.3710 and MAE = 1.3322 units using strictly leakage-safe features.",
+    "Top predictive features: Product_Hist_Avg_Demand, Category_Hist_Avg_Demand, Store_Orders_Roll_Mean_7d, Day_of_Week, Demand_Roll_Std_7d"
+  ]
+}

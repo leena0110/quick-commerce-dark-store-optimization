@@ -1,0 +1,31 @@
+{
+  "before": {
+    "total_records": 106398,
+    "duplicate_rows": 526,
+    "negative_prices": 5,
+    "high_quantity_records": 212,
+    "missing_values": {
+      "Discount_Pct": 852,
+      "Discount_Amount": 852,
+      "Payment_Type": 318,
+      "Delivery_Distance_km": 1593
+    }
+  },
+  "after": {
+    "total_records": 105872,
+    "missing_values": 0,
+    "duplicates": 0
+  },
+  "log": {
+    "original_shape": "(106398, 15)",
+    "duplicates_removed": 526,
+    "negative_prices_fixed": 5,
+    "outlier_quantities": 212,
+    "extreme_quantities_capped": 162,
+    "missing_delivery_distance": 1588,
+    "missing_discount": 846,
+    "missing_payment": 317,
+    "final_shape": "(105872, 15)",
+    "remaining_missing": 0
+  }
+}

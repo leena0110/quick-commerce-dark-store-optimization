@@ -1,0 +1,24 @@
+{
+  "finding_1": {
+    "title": "Hourly Demand Pattern",
+    "peak_hours_pct": 52.2,
+    "morning_peak_units": 30855,
+    "evening_peak_units": 47686,
+    "business_significance": "Peak demand is concentrated in morning (7-9 AM) and evening (6-9 PM) windows; inventory replenishment and shelf staging should prioritize these periods."
+  },
+  "finding_2": {
+    "title": "Category Demand Distribution",
+    "top_category": "Fruits & Vegetables",
+    "top_category_units": 34046,
+    "bottom_category": "Household",
+    "bottom_category_units": 5222,
+    "business_significance": "Demand is concentrated in fresh produce and dairy; high-velocity categories should receive greater forecasting and inventory tracking priority."
+  },
+  "finding_3": {
+    "title": "Weekday vs Weekend Demand",
+    "weekend_uplift_pct": 23.1,
+    "max_uplift_category": "Staples",
+    "max_uplift_pct": 27.2,
+    "business_significance": "Weekend daily demand is substantially higher than weekday demand; replenishment schedules can anticipate weekend volume patterns."
+  }
+}
