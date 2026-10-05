@@ -1,19 +1,33 @@
 # Dataset Documentation
 ## Quick-Commerce Dark Store Inventory & Bundling Optimization
 
+Course: **23CSE452 — Business Analytics Capstone Project** | Review 1
+
+---
+
+## Quick Reference — Review 1 Rubric Mapping
+
+| Rubric Requirement | Section in this Document |
+|---|---|
+| Source and collection method | §3 Data Generation Method |
+| Dataset size | §6 Dataset Size |
+| Key variables | §7 Variable Dictionary |
+| Prediction target | §9 Prediction Target |
+| Collection period and limitations | §5 Simulation Period · §13 Known Limitations |
+| Dataset documentation | This document |
+| Small data sample | §17 Sample Records |
+
 ---
 
 ## 1. Project Title
 **Quick-Commerce Dark Store Inventory & Bundling Optimization**
 
-Course: 23CSE452 — Business Analytics Capstone Project
-
 ---
 
 ## 2. Purpose
 This dataset supports the investigation of two connected business problems in quick-commerce:
-1. **Inventory/Demand Prediction** (Review 1): Predict future product demand to reduce stockout risk
-2. **Product Bundling via Association Rules** (Review 2): Discover frequently co-purchased products to increase Average Order Value (AOV)
+1. **Inventory/Demand Prediction** (Review 1): Predict daily product demand to support demand-informed inventory planning
+2. **Product Bundling via Association Rules** (Review 2): Discover frequently co-purchased products to support product bundling recommendations
 
 ---
 
@@ -82,17 +96,31 @@ To demonstrate realistic data cleaning, minor quality issues were introduced:
 ---
 
 ## 6. Dataset Size
+
 | Metric | Value |
-|---|---|
+|---|---:|
 | Total raw transaction records | 106,398 |
 | Total cleaned transaction records | 105,872 |
-| Aggregated daily product-store observations | 78,416 |
-| Unique orders | 34,700 |
+| Complete daily product-store combinations | 84,912 |
+| Final modelling observations | 78,416 |
+| Unique orders | ~34,700 |
 | Unique products | 58 |
 | Unique customers | 4,994 |
 | Dark stores | 8 |
 | Raw columns | 15 |
-| Engineered feature count | 18 |
+| Engineered features | 18 |
+
+### Daily Store-Product Panel
+
+For demand modelling, the transaction-level data was aggregated into a complete daily product-store panel.
+
+The complete panel contains:
+
+**183 days × 8 dark stores × 58 products = 84,912 observations**
+
+Days with no recorded sales were explicitly represented with `Daily_Quantity = 0`.
+
+The first 14 days were then excluded from modelling because the lag and rolling features require sufficient historical observations. This resulted in **78,416 final modelling observations**.
 
 ---
 
@@ -141,43 +169,83 @@ To demonstrate realistic data cleaning, minor quality issues were introduced:
 ---
 
 ## 9. Prediction Target
-**Daily_Quantity**: The total quantity of a specific product ordered at a specific dark store on a given day.
+**`Daily_Quantity`**: The total number of units of a specific product sold at a specific dark store on a specific calendar day.
 
 This is a **regression** target used for demand prediction.
 
 ---
 
-## 10. Missing Value Handling
-| Column | Missing Count | % Missing | Handling Method | Justification |
-|---|---|---|---|---|
-| Delivery_Distance_km | ~1,593 | ~1.5% | Imputed with store-level median | GPS failures are store-specific |
-| Discount_Pct | ~852 | ~0.8% | Imputed with 0 | Missing discount likely means no discount |
-| Discount_Amount | ~852 | ~0.8% | Imputed with 0 | Consistent with Discount_Pct handling |
-| Payment_Type | ~318 | ~0.3% | Imputed with mode (UPI) | System glitch; most common payment used |
+## 10. Feature Engineering
+
+For Review 1, the cleaned transaction-level data was transformed into daily product-store observations and 18 leakage-safe features were created.
+
+### Calendar Features
+
+- `Day_of_Week`
+- `Day_of_Month`
+- `Month`
+- `Is_Weekend`
+- `Week_of_Year`
+
+### Product and Category Features
+
+- `Unit_Price`
+- `Product_Hist_Avg_Demand`
+- `Category_Hist_Avg_Demand`
+
+### Demand Lag Features
+
+- `Demand_Lag_1d`
+- `Demand_Lag_2d`
+- `Demand_Lag_3d`
+- `Demand_Lag_7d`
+
+### Rolling Demand Features
+
+- `Demand_Roll_Mean_3d`
+- `Demand_Roll_Mean_7d`
+- `Demand_Roll_Mean_14d`
+- `Demand_Roll_Std_7d`
+
+### Store Activity Features
+
+- `Store_Orders_Lag_1d`
+- `Store_Orders_Roll_Mean_7d`
+
+Historical and lag-based features were constructed using information available before the prediction date to avoid data leakage.
+
+## 11. Missing Value Handling
+
+| Column | Handling Method | Justification |
+|---|---|---|
+| `Delivery_Distance_km` | Imputed using store-level median | Delivery distance can vary by store, so store-level median preserves local distance characteristics |
+| `Discount_Pct` | Missing values replaced with 0 | Represents no discount when discount information is missing |
+| `Payment_Type` | Imputed using the mode | Used to retain records affected by missing payment information |
+| Derived financial fields | Recalculated after cleaning | Ensures financial values remain consistent with the cleaned transaction attributes |
 
 ---
 
-## 11. Outlier Handling
+## 12. Outlier Handling
 | Issue | Count | Method | Justification |
 |---|---|---|---|
-| Quantity > 5 | ~212 | Capped at 5 | Quick-commerce single-item orders rarely exceed 5 units |
+| Quantity > 5 | — | Capped at 5 | Extremely high quantities were treated as potential data-entry anomalies |
 | Negative prices | 5 | Converted to absolute value | Clearly system errors (no product has a negative price) |
 | Duplicate rows | ~526 | Removed | System retry/double-entry artifacts |
 
 ---
 
-## 12. Known Limitations
+## 13. Known Limitations
 1. **Synthetic data**: Does not capture the full complexity of real-world consumer behavior
 2. **No external factors**: Does not include weather, local events, promotions, or competitor activity
 3. **Simplified geography**: Delivery distances are simulated, not based on real maps
 4. **Static pricing**: Prices do not change over the simulation period (no dynamic pricing)
 5. **No returns/cancellations**: The dataset only includes completed transactions
-6. **No supply-side constraints**: Assumes unlimited product availability (no actual stockouts simulated)
+6. **No supply-side constraints**: Product availability and actual stockouts are not represented in the dataset.
 7. **Homogeneous customer behavior**: Customer segments are not explicitly modeled
 
 ---
 
-## 13. Ethical & Privacy Statement
+## 14. Ethical & Privacy Statement
 - This dataset is **100% synthetic** — it does not contain any real customer data
 - No personal information, names, addresses, or behavioral data from real individuals was used
 - This is NOT proprietary data from Blinkit, Zepto, Swiggy Instamart, or any real company
@@ -186,39 +254,75 @@ This is a **regression** target used for demand prediction.
 
 ---
 
-## 14. Reproducibility Instructions
+## 15. Reproducibility Instructions
 
 ### Requirements
-```
+
+```text
 Python 3.10+
-pandas >= 2.0
-numpy >= 1.24
-scikit-learn >= 1.2
-xgboost >= 1.7
-matplotlib >= 3.7
-seaborn >= 0.12
+pandas
+numpy
+scikit-learn
+xgboost
+matplotlib
+seaborn
+jupyter
 ```
 
 ### Steps to Reproduce
-```bash
-# 1. Generate the synthetic dataset
+
+1. Generate the synthetic dataset:
+
 python src/data_generation.py
 
-# 2. Run the complete analysis pipeline
-python run_analysis.py
+2. Open the Review 1 analysis notebook:
 
-# 3. Generate the Jupyter notebook
-python generate_notebook.py
-```
+notebooks/review1_analysis.ipynb
+
+Run the notebook cells sequentially to reproduce the Review 1 preprocessing, feature engineering, modelling and evaluation.
 
 The random seed (42) is set in all scripts to ensure exact reproducibility.
 
 ---
 
-## 15. Files
+## 16. Files
+
 | File | Location | Description |
 |---|---|---|
-| Raw dataset | `data/raw/darkstore_transactions.csv` | Original generated dataset with data quality issues |
-| Product catalogue | `data/raw/product_catalogue.csv` | Master list of 58 products with attributes |
-| Cleaned dataset | `data/processed/darkstore_transactions_cleaned.csv` | Dataset after cleaning |
-| Feature dataset | `data/processed/daily_demand_features.csv` | Aggregated daily demand with engineered features |
+| Raw transaction dataset | `data/raw/darkstore_transactions.csv` | Original synthetic transaction dataset |
+| Product catalogue | `data/raw/product_catalogue.csv` | Master list of 58 products and product attributes |
+| Cleaned dataset | `data/processed/darkstore_transactions_cleaned.csv` | Transaction dataset after preprocessing |
+| Feature dataset | `data/processed/daily_demand_features.csv` | Daily demand data with engineered features |
+| Dataset documentation | `documentation/dataset_documentation.md` | Dataset generation, variables, preprocessing and limitations |
+| Review 1 notebook | `notebooks/review1_analysis.ipynb` | Complete Review 1 analysis and predictive modelling |
+| Data generation script | `src/data_generation.py` | Python script used to generate the synthetic dataset |
+
+---
+
+## 17. Sample Records
+
+The table below shows 5 representative rows from the raw transaction dataset (`data/raw/darkstore_transactions.csv`). These are actual records from the generated file — no values have been modified.
+
+| Order_ID | Timestamp | Customer_ID | Dark_Store_ID | Product_ID | Product_Name | Product_Category | Qty | Unit_Price (₹) | Discount_Pct | Line_Total (₹) | Payment_Type | Delivery_Dist (km) | Order_Value (₹) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ORD_017803 | 2026-07-05 20:35:49 | CUST_4293 | DS_001 | P011 | Pav (6pcs) | Bakery | 1 | 30 | 0.0 | 30.0 | Credit Card | — | 200.0 |
+| ORD_033614 | 2026-09-25 23:01:05 | CUST_2898 | DS_001 | P031 | Potato (1kg) | Fruits & Vegetables | 1 | 30 | 15.0 | 25.5 | UPI | 2.3 | 325.5 |
+| ORD_032323 | 2026-09-19 22:08:39 | CUST_4760 | DS_002 | P029 | Onion (1kg) | Fruits & Vegetables | 1 | 35 | 0.0 | 35.0 | Cash on Delivery | 1.7 | 420.0 |
+| ORD_017309 | 2026-07-02 11:56:21 | CUST_4405 | DS_007 | P049 | Dish Soap (500ml) | Household | 1 | 60 | 0.0 | 60.0 | Credit Card | 0.8 | 520.0 |
+| ORD_006185 | 2026-05-04 09:01:20 | CUST_0166 | DS_003 | P002 | Curd (400g) | Dairy | 1 | 40 | 0.0 | 40.0 | Wallet | 1.6 | 235.0 |
+
+> **Note:** The `Delivery_Distance_km` column shows `—` where the value is missing in the raw data. Missing delivery distances (~1.5% of records) were imputed with store-level medians during preprocessing (see §11).
+
+### Product Catalogue Sample
+
+The product catalogue (`data/raw/product_catalogue.csv`) defines the 58 products and their demand properties. A sample of 5 rows is shown below.
+
+| Product_ID | Product_Name | Category | Unit_Price (₹) | Demand_Level | Morning_Weight | Evening_Weight |
+|---|---|---|---|---|---|---|
+| P001 | Milk (1L) | Dairy | 65 | high | 1.8 | 1.4 |
+| P009 | Bread (White) | Bakery | 45 | high | 1.9 | 1.0 |
+| P015 | Soft Drink (500ml) | Beverages | 40 | high | 0.6 | 1.7 |
+| P029 | Onion (1kg) | Fruits & Vegetables | 35 | high | 1.0 | 1.2 |
+| P049 | Dish Soap (500ml) | Household | 60 | medium | 0.9 | 1.1 |
+
+`Morning_Weight` and `Evening_Weight` are multipliers applied during data generation to model time-of-day demand patterns.
