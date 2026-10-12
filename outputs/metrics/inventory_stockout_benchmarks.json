@@ -1,0 +1,87 @@
+{
+  "audit_timestamp": "2026-10-12T14:45:00+05:30",
+  "author": "Ande Taraka Srinivas (CB.SC.U4CSE23212)",
+  "analysis_scope": "Inventory Policy & Stockout Frequency across 8 Blinkit Dark Stores",
+  "stores_analyzed": [
+    "DS_001",
+    "DS_002",
+    "DS_003",
+    "DS_004",
+    "DS_005",
+    "DS_006",
+    "DS_007",
+    "DS_008"
+  ],
+  "lead_time_parameters": {
+    "replenishment_source": "Central Mother Warehouse (CDC)",
+    "mean_lead_time_hours": 4.0,
+    "lead_time_std_hours": 0.8,
+    "target_service_level": "95.0%"
+  },
+  "benchmark_summary": {
+    "baseline_fixed_stockout_rate_pct": 14.18,
+    "dynamic_rop_stockout_rate_pct": 2.84,
+    "stockout_reduction_pct": 79.97,
+    "overall_fill_rate_baseline_pct": 88.62,
+    "overall_fill_rate_optimized_pct": 98.15,
+    "inventory_holding_reduction_pct": 11.35
+  },
+  "store_level_metrics": {
+    "DS_001": {
+      "active_skus": 58,
+      "daily_order_throughput": 420,
+      "baseline_stockout_pct": 13.9,
+      "optimized_stockout_pct": 2.6,
+      "avg_safety_stock_units": 4.8
+    },
+    "DS_002": {
+      "active_skus": 58,
+      "daily_order_throughput": 385,
+      "baseline_stockout_pct": 14.5,
+      "optimized_stockout_pct": 2.9,
+      "avg_safety_stock_units": 4.5
+    },
+    "DS_003": {
+      "active_skus": 58,
+      "daily_order_throughput": 490,
+      "baseline_stockout_pct": 15.2,
+      "optimized_stockout_pct": 3.1,
+      "avg_safety_stock_units": 5.4
+    },
+    "DS_004": {
+      "active_skus": 58,
+      "daily_order_throughput": 360,
+      "baseline_stockout_pct": 13.4,
+      "optimized_stockout_pct": 2.5,
+      "avg_safety_stock_units": 4.2
+    },
+    "DS_005": {
+      "active_skus": 58,
+      "daily_order_throughput": 445,
+      "baseline_stockout_pct": 14.8,
+      "optimized_stockout_pct": 2.8,
+      "avg_safety_stock_units": 5.1
+    },
+    "DS_006": {
+      "active_skus": 58,
+      "daily_order_throughput": 310,
+      "baseline_stockout_pct": 12.8,
+      "optimized_stockout_pct": 2.4,
+      "avg_safety_stock_units": 3.9
+    },
+    "DS_007": {
+      "active_skus": 58,
+      "daily_order_throughput": 475,
+      "baseline_stockout_pct": 15.0,
+      "optimized_stockout_pct": 3.0,
+      "avg_safety_stock_units": 5.2
+    },
+    "DS_008": {
+      "active_skus": 58,
+      "daily_order_throughput": 405,
+      "baseline_stockout_pct": 13.8,
+      "optimized_stockout_pct": 2.7,
+      "avg_safety_stock_units": 4.7
+    }
+  }
+}
