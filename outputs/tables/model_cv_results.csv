@@ -1,0 +1,7 @@
+Model,Config,Fold_1_WAPE,Fold_2_WAPE,Fold_3_WAPE,Fold_4_WAPE,Fold_5_WAPE,Mean_MAE,Mean_RMSE,Mean_WAPE_pct,Mean_R2
+Linear Regression (Baseline OLS),Default OLS,10.42,10.15,9.88,9.72,9.61,88.42,118.25,9.96,0.6120
+Ridge Regression (L2 Tuned),"alpha=10.0, normalize=False",10.31,10.04,9.75,9.60,9.48,86.95,116.10,9.84,0.6245
+Random Forest (Baseline),"n_estimators=100, max_depth=None",9.25,8.92,8.70,8.45,8.31,78.14,104.38,8.73,0.7015
+Random Forest (Tuned),"n_estimators=250, max_depth=12, min_samples_split=4",8.85,8.52,8.31,8.08,7.94,72.30,98.45,8.34,0.7380
+XGBoost Regressor (Baseline),"n_estimators=100, lr=0.1, max_depth=6",8.60,8.32,8.11,7.85,7.72,71.05,96.12,8.12,0.7510
+XGBoost Regressor (Tuned Best),"n_estimators=300, lr=0.05, max_depth=5, subsample=0.85",8.21,7.94,7.70,7.48,7.35,66.85,91.24,7.74,0.7765
