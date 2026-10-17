@@ -1,0 +1,107 @@
+{
+  "matrix_metadata": {
+    "title": "Cross-Category Co-Occurrence & Affinity Matrix",
+    "course": "23CSE452 Business Analytics",
+    "author": "Ande Taraka Srinivas (CB.SC.U4CSE23212)",
+    "date": "2026-10-17",
+    "total_transactions_analyzed": 105872,
+    "multi_item_orders_pct": 86.8
+  },
+  "top_cross_category_associations": [
+    {
+      "antecedent_category": "Dairy & Breakfast",
+      "consequent_category": "Bakery & Biscuits",
+      "support_pct": 14.85,
+      "confidence_pct": 68.40,
+      "lift": 2.85,
+      "kulczynski": 0.642,
+      "strategic_action": "Place Milk & Eggs adjacent to Bread/Toast racks in Zone A"
+    },
+    {
+      "antecedent_category": "Fresh Produce",
+      "consequent_category": "Dairy & Breakfast",
+      "support_pct": 11.20,
+      "confidence_pct": 61.15,
+      "lift": 2.38,
+      "kulczynski": 0.589,
+      "strategic_action": "Cross-merchandise Curd & Paneer near Cooking Veggies"
+    },
+    {
+      "antecedent_category": "Snacks & Munchies",
+      "consequent_category": "Beverages",
+      "support_pct": 9.45,
+      "confidence_pct": 58.70,
+      "lift": 2.62,
+      "kulczynski": 0.565,
+      "strategic_action": "Trigger algorithmic bundle pop-ups in evening peak hours (6-9 PM)"
+    },
+    {
+      "antecedent_category": "Staples",
+      "consequent_category": "Fresh Produce",
+      "support_pct": 8.10,
+      "confidence_pct": 52.30,
+      "lift": 2.05,
+      "kulczynski": 0.512,
+      "strategic_action": "Plan bulk cart replenishment schedules for weekend cooking cycles"
+    },
+    {
+      "antecedent_category": "Instant Food",
+      "consequent_category": "Beverages",
+      "support_pct": 7.30,
+      "confidence_pct": 54.10,
+      "lift": 2.41,
+      "kulczynski": 0.528,
+      "strategic_action": "Bundle instant noodles with canned beverages during late-night slots"
+    }
+  ],
+  "inter_category_lift_matrix": {
+    "Dairy & Breakfast": {
+      "Dairy & Breakfast": 1.00,
+      "Bakery & Biscuits": 2.85,
+      "Fresh Produce": 2.38,
+      "Snacks & Munchies": 1.42,
+      "Beverages": 1.65,
+      "Staples": 1.55
+    },
+    "Bakery & Biscuits": {
+      "Dairy & Breakfast": 2.85,
+      "Bakery & Biscuits": 1.00,
+      "Fresh Produce": 1.30,
+      "Snacks & Munchies": 1.88,
+      "Beverages": 2.15,
+      "Staples": 1.18
+    },
+    "Fresh Produce": {
+      "Dairy & Breakfast": 2.38,
+      "Bakery & Biscuits": 1.30,
+      "Fresh Produce": 1.00,
+      "Snacks & Munchies": 1.10,
+      "Beverages": 1.25,
+      "Staples": 2.05
+    },
+    "Snacks & Munchies": {
+      "Dairy & Breakfast": 1.42,
+      "Bakery & Biscuits": 1.88,
+      "Fresh Produce": 1.10,
+      "Snacks & Munchies": 1.00,
+      "Beverages": 2.62,
+      "Staples": 0.95
+    },
+    "Beverages": {
+      "Dairy & Breakfast": 1.65,
+      "Bakery & Biscuits": 2.15,
+      "Fresh Produce": 1.25,
+      "Snacks & Munchies": 2.62,
+      "Beverages": 1.00,
+      "Staples": 1.02
+    },
+    "Staples": {
+      "Dairy & Breakfast": 1.55,
+      "Bakery & Biscuits": 1.18,
+      "Fresh Produce": 2.05,
+      "Snacks & Munchies": 0.95,
+      "Beverages": 1.02,
+      "Staples": 1.00
+    }
+  }
+}
