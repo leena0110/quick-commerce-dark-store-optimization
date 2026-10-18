@@ -326,3 +326,17 @@ The product catalogue (`data/raw/product_catalogue.csv`) defines the 58 products
 | P049 | Dish Soap (500ml) | Household | 60 | medium | 0.9 | 1.1 |
 
 `Morning_Weight` and `Evening_Weight` are multipliers applied during data generation to model time-of-day demand patterns.
+
+---
+
+## 18. Operational & Inventory Control Schema
+
+Contributed by **Ande Taraka Srinivas (CB.SC.U4CSE23212)** for Review 1 & 2 operational extension:
+
+| Variable | Description | Typical Value / Unit |
+|---|---|---|
+| `Safety_Stock_95pct` | Buffer stock units required to achieve 95% cycle service level | 3 to 8 units |
+| `Reorder_Point_ROP` | Continuous review stock level triggering replenishment | 8 to 22 units |
+| `Replenishment_Lead_Time` | Mother warehouse to dark store transfer duration | 4.0 ± 0.8 hours |
+| `Assigned_Zone` | Physical store warehouse slot (Golden Zone vs Standard) | Zone A / B / C |
+| `Picker_Distance_m` | Simulated walking travel distance per order assembly | 20 to 50 meters |
