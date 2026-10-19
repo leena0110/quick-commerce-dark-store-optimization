@@ -1,0 +1,7 @@
+Model,Parameters_Architecture,Test_Horizon,MAE (Units),RMSE (Units),WAPE (%)
+XGBoost Regressor,Auto-Calibrated,30 Days (Sep 2026),75.4,99.5,8.29
+"SARIMA(1,1,1)(1,1,1,7)",Auto-Calibrated,30 Days (Sep 2026),73.73,99.98,8.11
+Holt-Winters (Add-Add),Auto-Calibrated,30 Days (Sep 2026),74.64,101.76,8.21
+7-Day Moving Average,Auto-Calibrated,30 Days (Sep 2026),91.45,116.17,10.06
+Naive (t-1),Auto-Calibrated,30 Days (Sep 2026),114.27,134.93,12.57
+Seasonal-Naive (t-7),Auto-Calibrated,30 Days (Sep 2026),101.6,137.57,11.18

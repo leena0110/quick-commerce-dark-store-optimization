@@ -1,0 +1,37 @@
+[
+  {
+    "Min_Support": 0.05,
+    "Frequent_Itemsets_Found": 30,
+    "Apriori_Time_Sec": 0.0472,
+    "FPGrowth_Time_Sec": 0.1468,
+    "FPGrowth_Speedup_Factor": 0.32
+  },
+  {
+    "Min_Support": 0.03,
+    "Frequent_Itemsets_Found": 42,
+    "Apriori_Time_Sec": 0.0736,
+    "FPGrowth_Time_Sec": 0.1687,
+    "FPGrowth_Speedup_Factor": 0.44
+  },
+  {
+    "Min_Support": 0.02,
+    "Frequent_Itemsets_Found": 52,
+    "Apriori_Time_Sec": 0.0763,
+    "FPGrowth_Time_Sec": 0.167,
+    "FPGrowth_Speedup_Factor": 0.46
+  },
+  {
+    "Min_Support": 0.015,
+    "Frequent_Itemsets_Found": 74,
+    "Apriori_Time_Sec": 0.1226,
+    "FPGrowth_Time_Sec": 0.3244,
+    "FPGrowth_Speedup_Factor": 0.38
+  },
+  {
+    "Min_Support": 0.01,
+    "Frequent_Itemsets_Found": 136,
+    "Apriori_Time_Sec": 0.145,
+    "FPGrowth_Time_Sec": 0.1932,
+    "FPGrowth_Speedup_Factor": 0.75
+  }
+]

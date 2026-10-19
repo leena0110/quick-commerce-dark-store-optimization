@@ -32,7 +32,7 @@ This dataset supports the investigation of two connected business problems in qu
 ---
 
 ## 3. Data Generation Method
-The dataset is **entirely synthetic**, generated using Python with the NumPy and Pandas libraries.
+The dataset is **synthetic**, generated using Python with the NumPy and Pandas libraries.
 
 **Why Synthetic Data?**
 - Real quick-commerce transaction data is proprietary and confidential (Blinkit, Zepto, Swiggy Instamart do not release operational data)

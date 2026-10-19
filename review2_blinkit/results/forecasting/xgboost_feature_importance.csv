@@ -1,0 +1,12 @@
+Feature,Importance
+day_of_week,0.31784457
+lag_7,0.17576814
+is_weekend,0.16168422
+lag_14,0.0748156
+roll_mean_7,0.05842366
+month,0.04777072
+lag_1,0.043881893
+roll_std_7,0.03314605
+roll_mean_14,0.03279112
+lag_2,0.031037353
+day_of_month,0.022836676

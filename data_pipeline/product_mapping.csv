@@ -1,0 +1,59 @@
+synthetic_product_id,original_synthetic_name,original_category,original_synthetic_price,grounded_source_product_id,grounded_real_product_name,grounded_brand,grounded_pack_size,grounded_unit,grounded_real_displayed_price,grounded_real_original_price,grounded_real_discount_pct,source_price_observation_timestamp,mapping_method
+P001,Milk (1L),Dairy,65,560906,Mother Dairy Cow Milk,Mother Dairy,1.0,ltr,62,62,0.0,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P002,Curd (400g),Dairy,40,522807,Amul Buffalo A2 Milk,Amul,500.0,ml,40,40,0.0,2026-10-18 01:42:05,Category Nearest Price Fallback
+P003,Paneer (200g),Dairy,90,3471,Yakult Probiotic Drink,Yakult,65.0,ml,90,90,0.0,2026-10-18 01:42:05,Category Nearest Price Fallback
+P004,Butter (100g),Dairy,55,637879,Country Delight Buffalo Fresh Milk,Country Delight,450.0,ml,56,59,5.08,2026-10-18 01:42:05,Category Nearest Price Fallback
+P005,Cheese Slices,Dairy,120,138836,Nestle a+ Toned Milk,Nestle a+,1.0,ltr,112,112,0.0,2026-10-18 01:42:05,Category Nearest Price Fallback
+P006,Yogurt (200ml),Dairy,35,12872,Amul Gold Full Cream Milk,Amul,500.0,ml,36,36,0.0,2026-10-18 01:42:05,Category Nearest Price Fallback
+P007,Cream (200ml),Dairy,60,561268,Amul Gold Full Cream Milk,Amul,1.0,ltr,72,72,0.0,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P008,Eggs (6pcs),Dairy,55,637879,Country Delight Buffalo Fresh Milk,Country Delight,450.0,ml,56,59,5.08,2026-10-18 01:42:05,Category Nearest Price Fallback
+P009,Bread (White),Bakery,45,24178,English Oven Milk Bread,English Oven,400.0,g,50,50,0.0,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P010,Bread (Brown),Bakery,55,530067,The Health Factory Zero Maida Whole Wheat Bread,The Health Factory,250.0,g,55,55,0.0,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P011,Pav (6pcs),Bakery,30,23779,Harvest Gold White Bread,Harvest Gold,350.0,g,35,35,0.0,2026-10-18 01:42:05,Category Nearest Price Fallback
+P012,Cake (Slice),Bakery,80,1376122,The Health Factory Mini Cakes – Rich Vanilla,The Health Factory,70.0,g,49,60,18.33,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P013,Cookies Pack,Bakery,50,496540,The Baker's Dozen Coconut Oats Bakery Cookies (Zero Maida),The Baker's Dozen,80.0,g,89,89,0.0,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P014,Bun (4pcs),Bakery,35,424982,Harvest Gold Atta Burger Bun,Harvest Gold,200.0,g,45,45,0.0,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P015,Soft Drink (500ml),Beverages,40,396488,7UP Nimbooz with Lemon Lime Soft Drink,7UP,350.0,ml,38,40,5.0,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P016,Juice (1L),Beverages,95,546529,Raw Pressery Refreshers Pineapple Juice,Raw Pressery,750.0,ml,95,140,32.14,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P017,Mineral Water (1L),Beverages,25,478127,Evian Natural Mineral Water,Evian,500.0,ml,160,160,0.0,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P018,Cold Coffee (200ml),Beverages,50,554217,Pluckk Valencia Orange Cold Pressed Juice by Pluckk,Pluckk,250.0,ml,109,159,31.45,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P019,Energy Drink,Beverages,110,554217,Pluckk Valencia Orange Cold Pressed Juice by Pluckk,Pluckk,250.0,ml,109,159,31.45,2026-10-18 01:42:05,Category Nearest Price Fallback
+P020,Buttermilk (200ml),Beverages,25,280,7UP Nimbooz with Lemon Lime Soft Drink,7UP,350.0,ml,20,20,0.0,2026-10-18 01:42:05,Category Nearest Price Fallback
+P021,Tea Bags (25pcs),Beverages,150,772854,Red Bull Cold Brew Coffee flavoured Drink,Red Bull,250.0,ml,149,159,6.29,2026-10-18 01:42:05,Category Nearest Price Fallback
+P022,Chips (Large),Snacks,50,486101,Kettle Studio Sweet Chilli With Lime & Basil Potato Chips,Kettle Studio,60.0,g,49,49,0.0,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P023,Namkeen Mix,Snacks,45,35388,Haldiram's Lite Chiwda Namkeen,Haldiram's,150.0,g,45,45,0.0,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P024,Biscuits,Snacks,30,790181,Koh Kae Salted Peanut Namkeen,Koh Kae,38.0,g,32,35,8.57,2026-10-18 01:42:05,Category Nearest Price Fallback
+P025,Popcorn,Snacks,60,3135,American Garden Butter Microwave Popcorn,American Garden,273.0,g,324,335,3.28,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P026,Makhana (Fox Nuts),Snacks,120,546138,Tong Garden Salted Peanuts,Tong Garden,150.0,g,128,140,8.57,2026-10-18 01:42:05,Category Nearest Price Fallback
+P027,Dry Fruits Mix,Snacks,250,751379,Sweet Karam Coffee Ragi Onion Murukku Chakli/Crisp,Sweet Karam Coffee,95.0,g,244,297,17.85,2026-10-18 01:42:05,Category Nearest Price Fallback
+P028,Banana (6pcs),Fruits & Vegetables,40,342340,Baby Banana,Generic / Unbranded,4.0,pcs,43,55,21.82,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P029,Onion (1kg),Fruits & Vegetables,35,421744,Spring Onion (Hari Pyaz),Freshbury,150.0,g,37,44,15.91,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P030,Tomato (500g),Fruits & Vegetables,25,367909,Hybrid Tomato (Tamatar),Generic / Unbranded,500.0,g,28,32,12.5,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P031,Potato (1kg),Fruits & Vegetables,30,199435,Potato (Aloo),Generic / Unbranded,1.0,kg,24,28,14.29,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P032,Apple (4pcs),Fruits & Vegetables,160,355038,Mr. Apple New Zealand Royal Gala,Mr. Apple,300.0,g,159,203,21.67,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P033,Lemon (6pcs),Fruits & Vegetables,20,229627,Lemon,Freshbury,200.0,g,57,67,14.93,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P034,Spinach (Bunch),Fruits & Vegetables,25,3889,Coriander Bunch (Dhaniya Patta),Freshbury,100.0,g,24,29,17.24,2026-10-18 01:42:05,Category Nearest Price Fallback
+P035,Capsicum (2pcs),Fruits & Vegetables,40,3888,Green Capsicum (Shimla Mirch),Freshbury,250.0,g,37,44,15.91,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P036,Rice (1kg),Staples,70,528003,Whole Farm Premium Raisins,Whole Farm,100.0,g,62,110,43.64,2026-10-18 01:42:05,Category Nearest Price Fallback
+P037,Atta/Flour (1kg),Staples,50,385313,Mr. Makhana Pudina Party Flavoured Makhana,Mr. Makhana,21.0,g,48,50,4.0,2026-10-18 01:42:05,Category Nearest Price Fallback
+P038,Sugar (500g),Staples,25,536546,Whole Farm Premium Raw Peanut,Whole Farm,200.0,g,45,90,50.0,2026-10-18 01:42:05,Category Nearest Price Fallback
+P039,Salt (1kg),Staples,20,528344,Mr. Makhana Himalayan Salt & Pepper Flavoured Makhana,Mr. Makhana,55.0,g,135,150,10.0,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P040,Cooking Oil (1L),Staples,140,1380655,Tata Sampann Raw Peanut,Tata Sampann,500.0,g,138,165,16.36,2026-10-18 01:42:05,Category Nearest Price Fallback
+P041,Dal/Lentils (500g),Staples,75,528003,Whole Farm Premium Raisins,Whole Farm,100.0,g,62,110,43.64,2026-10-18 01:42:05,Category Nearest Price Fallback
+P042,Soap (3pcs),Personal Care,120,563200,Ghar Soaps De-Tanning Magic Face Wash,Ghar Soaps,100.0,ml,240,333,27.93,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P043,Shampoo (200ml),Personal Care,180,19790,Himalaya Purifying Neem Face Wash,Himalaya,150.0,ml,184,279,34.05,2026-10-18 01:42:05,Category Nearest Price Fallback
+P044,Toothpaste,Personal Care,95,493520,Mamaearth Vitamin C Face Wash,Mamaearth,50.0,ml,115,125,8.0,2026-10-18 01:42:05,Category Nearest Price Fallback
+P045,Face Wash,Personal Care,150,11383,Everyuth Walnut Exfoliating Face Scrub,Everyuth,100.0,g,136,210,35.24,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P046,Hand Sanitizer,Personal Care,80,493520,Mamaearth Vitamin C Face Wash,Mamaearth,50.0,ml,115,125,8.0,2026-10-18 01:42:05,Category Nearest Price Fallback
+P047,Tissue Paper,Personal Care,50,493520,Mamaearth Vitamin C Face Wash,Mamaearth,50.0,ml,115,125,8.0,2026-10-18 01:42:05,Category Nearest Price Fallback
+P048,Detergent (500g),Household,110,522440,SaveMore Toilet Cleaner Liquid,SaveMore,500.0,ml,109,180,39.44,2026-10-18 01:42:05,Category Nearest Price Fallback
+P049,Dish Soap (500ml),Household,60,521559,SaveMore Toilet Cleaner Liquid,SaveMore,500.0,ml,60,90,33.33,2026-10-18 01:42:05,Category Nearest Price Fallback
+P050,Floor Cleaner (500ml),Household,90,778756,MaxKleen 2 In 1 Floor Cleaner & Insect Repellent,MaxKleen,500.0,ml,97,129,24.81,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P051,Garbage Bags,Household,70,68577,Gainda White Phenyl Disinfectant Floor Cleaner,Gainda,1.0,ltr,63,75,16.0,2026-10-18 01:42:05,Category Nearest Price Fallback
+P052,Sponge/Scrubber,Household,30,182516,Mr Muscle Dranex Drain Cleaner (Powder),Mr Muscle,50.0,g,30,33,9.09,2026-10-18 01:42:05,Category Nearest Price Fallback
+P053,Instant Noodles (4pk),Instant & Frozen,80,10781,McCain French Fries,McCain,420.0,g,99,129,23.26,2026-10-18 01:42:05,Category Nearest Price Fallback
+P054,Frozen Peas (200g),Instant & Frozen,50,528552,Haldiram's Aloo Pyaz Paratha (Frozen),Haldiram's,4.0,pcs,99,105,5.71,2026-10-18 01:42:05,High Confidence (Keyword + Category)
+P055,Pasta (500g),Instant & Frozen,75,717746,The Baker's Dozen Malabar Paratha - Ready to Cook,The Baker's Dozen,3.0,pcs,59,65,9.23,2026-10-18 01:42:05,Category Nearest Price Fallback
+P056,Pasta Sauce,Instant & Frozen,110,498731,Aashirvaad Malabar Paratha (Heat & Eat),Aashirvaad,6.0,pcs,109,131,16.79,2026-10-18 01:42:05,Category Nearest Price Fallback
+P057,Ready-to-Eat Meal,Instant & Frozen,120,745023,Godrej Yummiez Cheesy Pizza Cheese Sticks,Godrej Yummiez,250.0,g,119,180,33.89,2026-10-18 01:42:05,Category Nearest Price Fallback
+P058,Frozen Paratha (5pcs),Instant & Frozen,90,528552,Haldiram's Aloo Pyaz Paratha (Frozen),Haldiram's,4.0,pcs,99,105,5.71,2026-10-18 01:42:05,High Confidence (Keyword + Category)
