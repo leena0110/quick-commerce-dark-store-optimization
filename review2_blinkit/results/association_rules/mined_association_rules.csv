@@ -1,0 +1,43 @@
+antecedents_str,consequents_str,support,confidence,lift,leverage,conviction
+The Baker's Dozen Malabar Paratha - Ready to Cook,Aashirvaad Malabar Paratha (Heat & Eat),0.0166,0.2937,5.1056,0.0133,1.3344
+Aashirvaad Malabar Paratha (Heat & Eat),The Baker's Dozen Malabar Paratha - Ready to Cook,0.0166,0.288,5.1056,0.0133,1.3253
+Spring Onion (Hari Pyaz),Hybrid Tomato (Tamatar),0.0338,0.2835,2.2623,0.0188,1.2208
+Hybrid Tomato (Tamatar),Spring Onion (Hari Pyaz),0.0338,0.2694,2.2623,0.0188,1.2058
+Mr. Apple New Zealand Royal Gala,Baby Banana,0.0133,0.259,2.2611,0.0074,1.1949
+Baby Banana,Mr. Apple New Zealand Royal Gala,0.0133,0.1164,2.2611,0.0074,1.0735
+Evian Natural Mineral Water,Godrej Yummiez Cheesy Pizza Cheese Sticks,0.0107,0.1137,2.1097,0.0056,1.0675
+Godrej Yummiez Cheesy Pizza Cheese Sticks,Evian Natural Mineral Water,0.0107,0.199,2.1097,0.0056,1.1307
+Haldiram's Aloo Pyaz Paratha (Frozen),Amul Buffalo A2 Milk,0.0167,0.2361,1.9674,0.0082,1.152
+Amul Buffalo A2 Milk,Haldiram's Aloo Pyaz Paratha (Frozen),0.0167,0.1392,1.9674,0.0082,1.0795
+Kettle Studio Sweet Chilli With Lime & Basil Potato Chips,7UP Nimbooz with Lemon Lime Soft Drink,0.04,0.3256,1.8688,0.0186,1.2245
+7UP Nimbooz with Lemon Lime Soft Drink,Kettle Studio Sweet Chilli With Lime & Basil Potato Chips,0.04,0.2296,1.8688,0.0186,1.1385
+Mother Dairy Cow Milk,English Oven Milk Bread,0.0358,0.2422,1.8534,0.0165,1.1472
+English Oven Milk Bread,Mother Dairy Cow Milk,0.0358,0.2743,1.8534,0.0165,1.174
+Potato (Aloo),Hybrid Tomato (Tamatar),0.0271,0.2294,1.8306,0.0123,1.1351
+Hybrid Tomato (Tamatar),Potato (Aloo),0.0271,0.216,1.8306,0.0123,1.125
+Potato (Aloo),Spring Onion (Hari Pyaz),0.0252,0.2135,1.7926,0.0111,1.12
+Spring Onion (Hari Pyaz),Potato (Aloo),0.0252,0.2115,1.7926,0.0111,1.1186
+McCain French Fries,Kettle Studio Sweet Chilli With Lime & Basil Potato Chips,0.0217,0.2035,1.6561,0.0086,1.1012
+Kettle Studio Sweet Chilli With Lime & Basil Potato Chips,McCain French Fries,0.0217,0.1768,1.6561,0.0086,1.0851
+7UP Nimbooz with Lemon Lime Soft Drink,Haldiram's Lite Chiwda Namkeen,0.0157,0.09,1.6323,0.0061,1.0383
+Haldiram's Lite Chiwda Namkeen,7UP Nimbooz with Lemon Lime Soft Drink,0.0157,0.2844,1.6323,0.0061,1.154
+Tata Sampann Raw Peanut,Whole Farm Premium Raisins,0.0119,0.2112,1.5542,0.0043,1.0955
+Whole Farm Premium Raisins,Tata Sampann Raw Peanut,0.0119,0.0879,1.5542,0.0043,1.0344
+English Oven Milk Bread,Country Delight Buffalo Fresh Milk,0.0336,0.2574,1.5203,0.0115,1.1186
+Country Delight Buffalo Fresh Milk,English Oven Milk Bread,0.0336,0.1987,1.5203,0.0115,1.0849
+Country Delight Buffalo Fresh Milk,The Health Factory Zero Maida Whole Wheat Bread,0.0148,0.0873,1.5001,0.0049,1.0319
+The Health Factory Zero Maida Whole Wheat Bread,Country Delight Buffalo Fresh Milk,0.0148,0.254,1.5001,0.0049,1.1135
+McCain French Fries,7UP Nimbooz with Lemon Lime Soft Drink,0.0278,0.26,1.4924,0.0092,1.116
+7UP Nimbooz with Lemon Lime Soft Drink,McCain French Fries,0.0278,0.1593,1.4924,0.0092,1.0625
+The Health Factory Zero Maida Whole Wheat Bread,Mother Dairy Cow Milk,0.0121,0.2086,1.4095,0.0035,1.0766
+Mother Dairy Cow Milk,The Health Factory Zero Maida Whole Wheat Bread,0.0121,0.0821,1.4095,0.0035,1.026
+Baby Banana,Amul Buffalo A2 Milk,0.0187,0.1631,1.3591,0.0049,1.0515
+Amul Buffalo A2 Milk,Baby Banana,0.0187,0.1557,1.3591,0.0049,1.0487
+Koh Kae Salted Peanut Namkeen,Mother Dairy Cow Milk,0.0202,0.1984,1.3408,0.0051,1.0629
+Mother Dairy Cow Milk,Koh Kae Salted Peanut Namkeen,0.0202,0.1365,1.3408,0.0051,1.0402
+Pluckk Valencia Orange Cold Pressed Juice by Pluckk,Kettle Studio Sweet Chilli With Lime & Basil Potato Chips,0.0114,0.1632,1.3285,0.0028,1.0482
+Kettle Studio Sweet Chilli With Lime & Basil Potato Chips,Pluckk Valencia Orange Cold Pressed Juice by Pluckk,0.0114,0.093,1.3285,0.0028,1.0253
+Amul Buffalo A2 Milk,Mother Dairy Cow Milk,0.0228,0.19,1.284,0.005,1.0519
+Mother Dairy Cow Milk,Amul Buffalo A2 Milk,0.0228,0.1541,1.284,0.005,1.0403
+Baby Banana,Mother Dairy Cow Milk,0.0216,0.1888,1.2754,0.0047,1.0502
+Mother Dairy Cow Milk,Baby Banana,0.0216,0.1461,1.2754,0.0047,1.0369

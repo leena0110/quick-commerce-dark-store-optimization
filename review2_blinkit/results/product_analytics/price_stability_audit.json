@@ -1,0 +1,8 @@
+{
+  "total_snapshot_records": 850,
+  "unique_products_observed": 609,
+  "products_with_repeated_passes": 241,
+  "products_with_price_shift": 0,
+  "price_stickiness_rate": 100.0,
+  "reason_for_stickiness": "Indian Legal Metrology (Packaged Commodities) Rules mandate fixed printed MRP; retailers maintain EDLP with discrete promotional calendar shifts."
+}

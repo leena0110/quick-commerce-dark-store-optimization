@@ -1,0 +1,61 @@
+dataset_name,column_name,data_type,description,example_value,constraints_or_source
+raw_product_observations.csv,source_name,string,Name of the originating retail platform,"Blinkit",Constant ("Blinkit")
+raw_product_observations.csv,source_product_id,string,Unique platform product identifier,"19512",Primary key from Blinkit state
+raw_product_observations.csv,product_name,string,Full commercial title of the item,"Amul Taaza Toned Milk",Non-null string
+raw_product_observations.csv,category,string,Macro product department,"Dairy",Quick-commerce capstone taxonomy
+raw_product_observations.csv,subcategory,string,Specific sub-department,"Milk",From category URL / page context
+raw_product_observations.csv,brand,string,Manufacturer or brand name,"Amul",Scraped attribute
+raw_product_observations.csv,raw_variant,string,Unparsed packaging/volume descriptor,"500 ml",From state stepper / variant text
+raw_product_observations.csv,pack_size,float,Extracted numerical package volume/weight,500.0,Regex parsed numeric
+raw_product_observations.csv,unit,string,Standardized measurement unit,"ml",e.g. ml; g; kg; L; pcs
+raw_product_observations.csv,displayed_price,float,Selling price displayed to consumers (INR),30.0,Numeric > 0
+raw_product_observations.csv,original_price,float,Maximum Retail Price (MRP) in INR,30.0,Numeric >= displayed_price
+raw_product_observations.csv,discount_pct,float,Percentage discount calculated from MRP,0.0,"(MRP - Price)/MRP * 100"
+raw_product_observations.csv,inventory,integer,Available stock units in dark store zone,50,Integer >= 0
+raw_product_observations.csv,availability_status,string,Operational stock status flag,"available",e.g. available; out_of_stock
+raw_product_observations.csv,rating,float,Customer aggregate star rating (out of 5),4.6,Float 0.0 - 5.0
+raw_product_observations.csv,product_url,string,Direct canonical product link,"https://blinkit.com/prn/.../prid/19512",Valid URL
+raw_product_observations.csv,source_page_url,string,URL of category page where product was listed,"https://blinkit.com/cn/milk/cid/14/922",Valid URL
+raw_product_observations.csv,collection_date,string,Date of collection,"2026-10-18",YYYY-MM-DD
+raw_product_observations.csv,collection_timestamp,string,Exact timestamp of HTTP fetch,"2026-10-18 01:39:25",YYYY-MM-DD HH:MM:SS
+raw_product_observations.csv,geographic_coverage,string,Regional / service area applicability,"India (National Catalog Default / Express Zones)",Documented boundary
+cleaned_product_catalogue.csv,source_name,string,Retail platform name,"Blinkit",Standardized
+cleaned_product_catalogue.csv,source_product_id,string,Unique product identifier,"19512",Primary Key (Deduplicated)
+cleaned_product_catalogue.csv,product_name,string,Cleaned item title,"Amul Taaza Toned Milk",Trimmed
+cleaned_product_catalogue.csv,category,string,Standard category,"Dairy",Standardized
+cleaned_product_catalogue.csv,subcategory,string,Cleaned subcategory,"Milk",Standardized
+cleaned_product_catalogue.csv,brand,string,Brand title,"Amul",Missing filled with "Generic / Unbranded"
+cleaned_product_catalogue.csv,pack_size,float,Standardized quantity,500.0,Float
+cleaned_product_catalogue.csv,unit,string,Standardized unit,"ml",Standardized
+cleaned_product_catalogue.csv,displayed_price,float,Active selling price in INR,30.0,Validated > 0
+cleaned_product_catalogue.csv,original_price,float,Standardized MRP in INR,30.0,Validated >= displayed_price
+cleaned_product_catalogue.csv,discount_pct,float,Real discount percentage,0.0,Bounded [0; 100]
+cleaned_product_catalogue.csv,inventory,integer,Verified dark store inventory,50,Cleaned integer
+cleaned_product_catalogue.csv,availability_status,string,Availability flag,"available",Normalized
+price_snapshots.csv,source_product_id,string,Unique product identifier,"19512",Match key
+price_snapshots.csv,observation_run,string,Label of observation pass,"Observation_Run_1",Pass indicator
+price_snapshots.csv,displayed_price,float,Observed selling price in run (INR),30.0,Numeric
+price_snapshots.csv,original_price,float,Observed MRP in run (INR),30.0,Numeric
+price_snapshots.csv,collection_timestamp,string,Actual timestamp when run was fetched,"2026-10-18 01:39:25",Timestamp
+enhanced_synthetic_transactions.csv,synthetic_order_id,string,Simulated order transaction identifier,"ORD_017803",Format ORD_XXXXXX
+enhanced_synthetic_transactions.csv,synthetic_transaction_timestamp,string,Simulated order execution timestamp,"2026-07-05 20:35:49",Simulation period 2026-04-01 to 2026-09-30
+enhanced_synthetic_transactions.csv,synthetic_customer_id,string,Simulated customer identifier,"CUST_4293",Format CUST_XXXX
+enhanced_synthetic_transactions.csv,synthetic_dark_store_id,string,Simulated servicing dark store facility,"DS_001",DS_001 to DS_008
+enhanced_synthetic_transactions.csv,synthetic_product_id,string,Catalogue mapping key,"P011",Original synthetic ID (P001-P058)
+enhanced_synthetic_transactions.csv,grounded_product_name,string,Grounded commercial product title,"Harvest Gold White Bread",From Blinkit scraped catalogue
+enhanced_synthetic_transactions.csv,product_category,string,Product category,"Bakery",Grounded category
+enhanced_synthetic_transactions.csv,brand,string,Authentic brand name,"Harvest Gold",From real scraped observation
+enhanced_synthetic_transactions.csv,pack_size,float,Observed pack size,350.0,From real scraped observation
+enhanced_synthetic_transactions.csv,unit,string,Observed pack unit,"g",From real scraped observation
+enhanced_synthetic_transactions.csv,quantity,integer,Simulated units purchased,1,Simulation parameter (1-6)
+enhanced_synthetic_transactions.csv,grounded_unit_price,float,Real observed selling price (INR),35.0,Observed from Blinkit
+enhanced_synthetic_transactions.csv,discount_pct,float,Applied discount percentage,0.0,Observed/simulated discount
+enhanced_synthetic_transactions.csv,discount_amount,float,Total discount monetary value (INR),0.0,quantity * unit_price * (pct/100)
+enhanced_synthetic_transactions.csv,line_total,float,Total billed value for line item (INR),35.0,(quantity * unit_price) - discount
+enhanced_synthetic_transactions.csv,order_value,float,Total aggregate basket value of entire order (INR),245.0,Sum of line_totals for order
+enhanced_synthetic_transactions.csv,payment_type,string,Simulated customer tender type,"Credit Card",UPI; Credit Card; Wallet; COD
+enhanced_synthetic_transactions.csv,delivery_distance_km,float,Simulated transit distance from dark store to drop,1.8,Float (0.5 to 8.0 km)
+enhanced_synthetic_transactions.csv,source_product_id,string,Audit key linking to genuine Blinkit item,"23779",Direct linkage to real item
+enhanced_synthetic_transactions.csv,source_price_observation_timestamp,string,Timestamp when grounding price was scraped,"2026-10-18 01:39:25",Provenanced timestamp
+enhanced_synthetic_transactions.csv,data_origin,string,Explicit transparency provenance label,"grounded_synthetic",Constant indicating grounded simulation
+enhanced_synthetic_transactions.csv,generation_rule_version,string,Rule version identifier,"v2.0_blinkit_grounded",Reproducibility version tag

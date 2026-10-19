@@ -1,0 +1,50 @@
+[
+  {
+    "Model": "XGBoost Regressor",
+    "Parameters_Architecture": "Auto-Calibrated",
+    "Test_Horizon": "30 Days (Sep 2026)",
+    "MAE (Units)": 75.4,
+    "RMSE (Units)": 99.5,
+    "WAPE (%)": 8.29
+  },
+  {
+    "Model": "SARIMA(1,1,1)(1,1,1,7)",
+    "Parameters_Architecture": "Auto-Calibrated",
+    "Test_Horizon": "30 Days (Sep 2026)",
+    "MAE (Units)": 73.73,
+    "RMSE (Units)": 99.98,
+    "WAPE (%)": 8.11
+  },
+  {
+    "Model": "Holt-Winters (Add-Add)",
+    "Parameters_Architecture": "Auto-Calibrated",
+    "Test_Horizon": "30 Days (Sep 2026)",
+    "MAE (Units)": 74.64,
+    "RMSE (Units)": 101.76,
+    "WAPE (%)": 8.21
+  },
+  {
+    "Model": "7-Day Moving Average",
+    "Parameters_Architecture": "Auto-Calibrated",
+    "Test_Horizon": "30 Days (Sep 2026)",
+    "MAE (Units)": 91.45,
+    "RMSE (Units)": 116.17,
+    "WAPE (%)": 10.06
+  },
+  {
+    "Model": "Naive (t-1)",
+    "Parameters_Architecture": "Auto-Calibrated",
+    "Test_Horizon": "30 Days (Sep 2026)",
+    "MAE (Units)": 114.27,
+    "RMSE (Units)": 134.93,
+    "WAPE (%)": 12.57
+  },
+  {
+    "Model": "Seasonal-Naive (t-7)",
+    "Parameters_Architecture": "Auto-Calibrated",
+    "Test_Horizon": "30 Days (Sep 2026)",
+    "MAE (Units)": 101.6,
+    "RMSE (Units)": 137.57,
+    "WAPE (%)": 11.18
+  }
+]

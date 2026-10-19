@@ -1,0 +1,194 @@
+2026-10-18 01:38:27,667 [INFO] Starting Blinkit data collection pipeline for 16 categories...
+2026-10-18 01:38:27,667 [INFO] [1/16] Scraping Dairy -> Milk
+2026-10-18 01:38:30,241 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/milk/cid/14/922
+2026-10-18 01:38:33,158 [INFO] Successfully fetched https://blinkit.com/cn/milk/cid/14/922 (851,357 bytes)
+2026-10-18 01:38:33,396 [INFO] Parsed 48 raw product instances from Milk
+2026-10-18 01:38:33,397 [INFO] [2/16] Scraping Dairy -> Milk Drinks
+2026-10-18 01:38:36,242 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/milk-drinks/cid/12/960
+2026-10-18 01:38:36,906 [INFO] Successfully fetched https://blinkit.com/cn/milk-drinks/cid/12/960 (1,130,463 bytes)
+2026-10-18 01:38:37,182 [INFO] Parsed 57 raw product instances from Milk Drinks
+2026-10-18 01:38:37,183 [INFO] [3/16] Scraping Bakery -> Bread & Pav
+2026-10-18 01:38:40,005 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/bread-pav/cid/14/953
+2026-10-18 01:38:40,446 [INFO] Successfully fetched https://blinkit.com/cn/bread-pav/cid/14/953 (689,249 bytes)
+2026-10-18 01:38:40,638 [INFO] Parsed 36 raw product instances from Bread & Pav
+2026-10-18 01:38:40,639 [INFO] [4/16] Scraping Bakery -> Gourmet Bakery
+2026-10-18 01:38:42,476 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/gourmet-bakery/cid/888/1959
+2026-10-18 01:38:43,006 [INFO] Successfully fetched https://blinkit.com/cn/gourmet-bakery/cid/888/1959 (1,016,369 bytes)
+2026-10-18 01:38:43,235 [INFO] Parsed 56 raw product instances from Gourmet Bakery
+2026-10-18 01:38:43,235 [INFO] [5/16] Scraping Beverages -> Fruit Juices
+2026-10-18 01:38:45,527 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/fruit-juice/cid/332/955
+2026-10-18 01:38:46,165 [INFO] Successfully fetched https://blinkit.com/cn/fruit-juice/cid/332/955 (1,306,376 bytes)
+2026-10-18 01:38:46,419 [INFO] Parsed 69 raw product instances from Fruit Juices
+2026-10-18 01:38:46,419 [INFO] [6/16] Scraping Beverages -> Imported Beverages
+2026-10-18 01:38:48,710 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/imported-beverages/cid/332/2360
+2026-10-18 01:38:49,267 [INFO] Successfully fetched https://blinkit.com/cn/imported-beverages/cid/332/2360 (923,396 bytes)
+2026-10-18 01:38:49,497 [INFO] Parsed 51 raw product instances from Imported Beverages
+2026-10-18 01:38:49,497 [INFO] [7/16] Scraping Snacks -> Namkeen & Snacks
+2026-10-18 01:38:52,608 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/namkeen-snacks/cid/1237/29
+2026-10-18 01:38:53,114 [INFO] Successfully fetched https://blinkit.com/cn/namkeen-snacks/cid/1237/29 (884,494 bytes)
+2026-10-18 01:38:53,352 [INFO] Parsed 48 raw product instances from Namkeen & Snacks
+2026-10-18 01:38:53,352 [INFO] [8/16] Scraping Snacks -> Imported Snacks
+2026-10-18 01:38:55,162 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/imported-snacks/cid/1237/2362
+2026-10-18 01:38:55,614 [INFO] Successfully fetched https://blinkit.com/cn/imported-snacks/cid/1237/2362 (562,121 bytes)
+2026-10-18 01:38:55,806 [INFO] Parsed 29 raw product instances from Imported Snacks
+2026-10-18 01:38:55,806 [INFO] [9/16] Scraping Fruits & Vegetables -> Fresh Vegetables
+2026-10-18 01:38:58,778 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/fresh-vegetables/cid/1487/1489
+2026-10-18 01:38:59,223 [INFO] Successfully fetched https://blinkit.com/cn/fresh-vegetables/cid/1487/1489 (714,037 bytes)
+2026-10-18 01:38:59,428 [INFO] Parsed 40 raw product instances from Fresh Vegetables
+2026-10-18 01:38:59,428 [INFO] [10/16] Scraping Fruits & Vegetables -> Fresh Fruits
+2026-10-18 01:39:02,106 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/fresh-fruits/cid/1487/1503
+2026-10-18 01:39:02,593 [INFO] Successfully fetched https://blinkit.com/cn/fresh-fruits/cid/1487/1503 (636,025 bytes)
+2026-10-18 01:39:02,849 [INFO] Parsed 36 raw product instances from Fresh Fruits
+2026-10-18 01:39:02,849 [INFO] [11/16] Scraping Staples -> Dry Fruits
+2026-10-18 01:39:05,278 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/dry-fruits/cid/1557/1160
+2026-10-18 01:39:05,717 [INFO] Successfully fetched https://blinkit.com/cn/dry-fruits/cid/1557/1160 (792,174 bytes)
+2026-10-18 01:39:05,939 [INFO] Parsed 40 raw product instances from Dry Fruits
+2026-10-18 01:39:05,939 [INFO] [12/16] Scraping Household -> Floor & Surface Cleaners
+2026-10-18 01:39:08,982 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/floor-surface-cleaners/cid/18/51
+2026-10-18 01:39:09,547 [INFO] Successfully fetched https://blinkit.com/cn/floor-surface-cleaners/cid/18/51 (1,082,483 bytes)
+2026-10-18 01:39:09,768 [INFO] Parsed 54 raw product instances from Floor & Surface Cleaners
+2026-10-18 01:39:09,768 [INFO] [13/16] Scraping Household -> Toilet & Bathroom Cleaners
+2026-10-18 01:39:12,723 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/toilet-bathroom-cleaners/cid/18/987
+2026-10-18 01:39:13,668 [INFO] Successfully fetched https://blinkit.com/cn/toilet-bathroom-cleaners/cid/18/987 (1,465,969 bytes)
+2026-10-18 01:39:13,953 [INFO] Parsed 74 raw product instances from Toilet & Bathroom Cleaners
+2026-10-18 01:39:13,954 [INFO] [14/16] Scraping Personal Care -> Face Cleaning
+2026-10-18 01:39:16,660 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/face-cleaning/cid/163/1117
+2026-10-18 01:39:17,211 [INFO] Successfully fetched https://blinkit.com/cn/face-cleaning/cid/163/1117 (925,144 bytes)
+2026-10-18 01:39:17,537 [INFO] Parsed 44 raw product instances from Face Cleaning
+2026-10-18 01:39:17,537 [INFO] [15/16] Scraping Instant & Frozen -> Frozen Veg Snacks
+2026-10-18 01:39:19,735 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/frozen-veg-snacks/cid/15/1413
+2026-10-18 01:39:20,238 [INFO] Successfully fetched https://blinkit.com/cn/frozen-veg-snacks/cid/15/1413 (627,048 bytes)
+2026-10-18 01:39:20,449 [INFO] Parsed 32 raw product instances from Frozen Veg Snacks
+2026-10-18 01:39:20,449 [INFO] [16/16] Scraping Instant & Frozen -> Frozen Non Veg Snacks
+2026-10-18 01:39:23,547 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/frozen-non-veg-snacks/cid/15/1412
+2026-10-18 01:39:24,989 [INFO] Successfully fetched https://blinkit.com/cn/frozen-non-veg-snacks/cid/15/1412 (613,643 bytes)
+2026-10-18 01:39:25,288 [INFO] Parsed 30 raw product instances from Frozen Non Veg Snacks
+2026-10-18 01:39:25,316 [INFO] Total raw observations collected: 744
+2026-10-18 01:39:25,353 [INFO] Saved raw observations to: C:\Users\Sunny-Cherry\Desktop\BA\BA_Project\data_pipeline\raw_product_observations.csv
+2026-10-18 01:39:25,406 [INFO] Saved cleaned catalogue (609 distinct products) to: C:\Users\Sunny-Cherry\Desktop\BA\BA_Project\data_pipeline\cleaned_product_catalogue.csv
+2026-10-18 01:40:19,672 [INFO] Waiting 10 seconds before collecting observation T2...
+2026-10-18 01:40:29,673 [INFO] Starting Blinkit data collection pipeline for 6 categories...
+2026-10-18 01:40:29,674 [INFO] [1/6] Scraping Dairy -> Milk
+2026-10-18 01:40:32,751 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/milk/cid/14/922
+2026-10-18 01:40:34,681 [INFO] Successfully fetched https://blinkit.com/cn/milk/cid/14/922 (906,989 bytes)
+2026-10-18 01:40:34,936 [INFO] Parsed 48 raw product instances from Milk
+2026-10-18 01:40:34,937 [INFO] [2/6] Scraping Dairy -> Milk Drinks
+2026-10-18 01:40:37,572 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/milk-drinks/cid/12/960
+2026-10-18 01:40:38,290 [INFO] Successfully fetched https://blinkit.com/cn/milk-drinks/cid/12/960 (1,130,326 bytes)
+2026-10-18 01:40:38,598 [INFO] Parsed 57 raw product instances from Milk Drinks
+2026-10-18 01:40:38,599 [INFO] [3/6] Scraping Bakery -> Bread & Pav
+2026-10-18 01:40:41,063 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/bread-pav/cid/14/953
+2026-10-18 01:40:42,301 [INFO] Successfully fetched https://blinkit.com/cn/bread-pav/cid/14/953 (633,130 bytes)
+2026-10-18 01:40:42,461 [INFO] Parsed 36 raw product instances from Bread & Pav
+2026-10-18 01:40:42,461 [INFO] [4/6] Scraping Bakery -> Gourmet Bakery
+2026-10-18 01:40:44,543 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/gourmet-bakery/cid/888/1959
+2026-10-18 01:40:46,088 [INFO] Successfully fetched https://blinkit.com/cn/gourmet-bakery/cid/888/1959 (1,016,462 bytes)
+2026-10-18 01:40:46,325 [INFO] Parsed 56 raw product instances from Gourmet Bakery
+2026-10-18 01:40:46,325 [INFO] [5/6] Scraping Beverages -> Fruit Juices
+2026-10-18 01:40:48,953 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/fruit-juice/cid/332/955
+2026-10-18 01:40:50,895 [INFO] Successfully fetched https://blinkit.com/cn/fruit-juice/cid/332/955 (1,306,376 bytes)
+2026-10-18 01:40:51,175 [INFO] Parsed 69 raw product instances from Fruit Juices
+2026-10-18 01:40:51,176 [INFO] [6/6] Scraping Beverages -> Imported Beverages
+2026-10-18 01:40:53,956 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/imported-beverages/cid/332/2360
+2026-10-18 01:40:55,032 [INFO] Successfully fetched https://blinkit.com/cn/imported-beverages/cid/332/2360 (923,396 bytes)
+2026-10-18 01:40:55,253 [INFO] Parsed 51 raw product instances from Imported Beverages
+2026-10-18 01:40:55,261 [INFO] Total raw observations collected: 317
+2026-10-18 01:40:55,279 [INFO] Saved raw observations to: C:\Users\Sunny-Cherry\Desktop\BA\BA_Project\data_pipeline\raw_product_observations.csv
+2026-10-18 01:41:16,785 [INFO] Waiting 10 seconds before collecting observation T2...
+2026-10-18 01:41:26,787 [INFO] Starting Blinkit data collection pipeline for 6 categories...
+2026-10-18 01:41:26,787 [INFO] [1/6] Scraping Dairy -> Milk
+2026-10-18 01:41:29,855 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/milk/cid/14/922
+2026-10-18 01:41:33,166 [INFO] Successfully fetched https://blinkit.com/cn/milk/cid/14/922 (906,989 bytes)
+2026-10-18 01:41:33,402 [INFO] Parsed 48 raw product instances from Milk
+2026-10-18 01:41:33,403 [INFO] [2/6] Scraping Dairy -> Milk Drinks
+2026-10-18 01:41:36,257 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/milk-drinks/cid/12/960
+2026-10-18 01:41:37,027 [INFO] Successfully fetched https://blinkit.com/cn/milk-drinks/cid/12/960 (1,130,326 bytes)
+2026-10-18 01:41:37,359 [INFO] Parsed 57 raw product instances from Milk Drinks
+2026-10-18 01:41:37,359 [INFO] [3/6] Scraping Bakery -> Bread & Pav
+2026-10-18 01:41:40,154 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/bread-pav/cid/14/953
+2026-10-18 01:41:40,768 [INFO] Successfully fetched https://blinkit.com/cn/bread-pav/cid/14/953 (689,218 bytes)
+2026-10-18 01:41:40,985 [INFO] Parsed 36 raw product instances from Bread & Pav
+2026-10-18 01:41:40,986 [INFO] [4/6] Scraping Bakery -> Gourmet Bakery
+2026-10-18 01:41:43,833 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/gourmet-bakery/cid/888/1959
+2026-10-18 01:41:44,295 [INFO] Successfully fetched https://blinkit.com/cn/gourmet-bakery/cid/888/1959 (1,016,400 bytes)
+2026-10-18 01:41:44,527 [INFO] Parsed 56 raw product instances from Gourmet Bakery
+2026-10-18 01:41:44,527 [INFO] [5/6] Scraping Beverages -> Fruit Juices
+2026-10-18 01:41:47,545 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/fruit-juice/cid/332/955
+2026-10-18 01:41:48,312 [INFO] Successfully fetched https://blinkit.com/cn/fruit-juice/cid/332/955 (1,306,376 bytes)
+2026-10-18 01:41:48,584 [INFO] Parsed 69 raw product instances from Fruit Juices
+2026-10-18 01:41:48,584 [INFO] [6/6] Scraping Beverages -> Imported Beverages
+2026-10-18 01:41:50,805 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/imported-beverages/cid/332/2360
+2026-10-18 01:41:51,226 [INFO] Successfully fetched https://blinkit.com/cn/imported-beverages/cid/332/2360 (923,396 bytes)
+2026-10-18 01:41:51,466 [INFO] Parsed 51 raw product instances from Imported Beverages
+2026-10-18 01:41:51,473 [INFO] Total raw observations collected: 317
+2026-10-18 01:41:51,489 [INFO] Saved raw observations to: C:\Users\Sunny-Cherry\Desktop\BA\BA_Project\data_pipeline\raw_product_observations.csv
+2026-10-18 01:41:51,516 [INFO] Saved cleaned catalogue (241 distinct products) to: C:\Users\Sunny-Cherry\Desktop\BA\BA_Project\data_pipeline\cleaned_product_catalogue.csv
+2026-10-18 01:41:51,575 [INFO] Saved total 850 snapshot observations to: C:\Users\Sunny-Cherry\Desktop\BA\BA_Project\data_pipeline\price_snapshots.csv
+2026-10-18 01:42:05,127 [INFO] Starting Blinkit data collection pipeline for 16 categories...
+2026-10-18 01:42:05,127 [INFO] [1/16] Scraping Dairy -> Milk
+2026-10-18 01:42:07,328 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/milk/cid/14/922
+2026-10-18 01:42:13,976 [INFO] Successfully fetched https://blinkit.com/cn/milk/cid/14/922 (851,357 bytes)
+2026-10-18 01:42:14,190 [INFO] Parsed 48 raw product instances from Milk
+2026-10-18 01:42:14,191 [INFO] [2/16] Scraping Dairy -> Milk Drinks
+2026-10-18 01:42:17,039 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/milk-drinks/cid/12/960
+2026-10-18 01:42:19,253 [INFO] Successfully fetched https://blinkit.com/cn/milk-drinks/cid/12/960 (1,130,348 bytes)
+2026-10-18 01:42:19,572 [INFO] Parsed 57 raw product instances from Milk Drinks
+2026-10-18 01:42:19,573 [INFO] [3/16] Scraping Bakery -> Bread & Pav
+2026-10-18 01:42:22,459 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/bread-pav/cid/14/953
+2026-10-18 01:42:23,995 [INFO] Successfully fetched https://blinkit.com/cn/bread-pav/cid/14/953 (689,167 bytes)
+2026-10-18 01:42:24,149 [INFO] Parsed 36 raw product instances from Bread & Pav
+2026-10-18 01:42:24,149 [INFO] [4/16] Scraping Bakery -> Gourmet Bakery
+2026-10-18 01:42:26,233 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/gourmet-bakery/cid/888/1959
+2026-10-18 01:42:27,781 [INFO] Successfully fetched https://blinkit.com/cn/gourmet-bakery/cid/888/1959 (1,016,544 bytes)
+2026-10-18 01:42:27,940 [INFO] Parsed 56 raw product instances from Gourmet Bakery
+2026-10-18 01:42:27,941 [INFO] [5/16] Scraping Beverages -> Fruit Juices
+2026-10-18 01:42:30,066 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/fruit-juice/cid/332/955
+2026-10-18 01:42:33,634 [INFO] Successfully fetched https://blinkit.com/cn/fruit-juice/cid/332/955 (1,306,376 bytes)
+2026-10-18 01:42:33,860 [INFO] Parsed 69 raw product instances from Fruit Juices
+2026-10-18 01:42:33,860 [INFO] [6/16] Scraping Beverages -> Imported Beverages
+2026-10-18 01:42:36,385 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/imported-beverages/cid/332/2360
+2026-10-18 01:42:43,368 [INFO] Successfully fetched https://blinkit.com/cn/imported-beverages/cid/332/2360 (923,396 bytes)
+2026-10-18 01:42:43,507 [INFO] Parsed 51 raw product instances from Imported Beverages
+2026-10-18 01:42:43,507 [INFO] [7/16] Scraping Snacks -> Namkeen & Snacks
+2026-10-18 01:42:46,425 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/namkeen-snacks/cid/1237/29
+2026-10-18 01:42:49,140 [INFO] Successfully fetched https://blinkit.com/cn/namkeen-snacks/cid/1237/29 (920,938 bytes)
+2026-10-18 01:42:49,311 [INFO] Parsed 48 raw product instances from Namkeen & Snacks
+2026-10-18 01:42:49,312 [INFO] [8/16] Scraping Snacks -> Imported Snacks
+2026-10-18 01:42:51,504 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/imported-snacks/cid/1237/2362
+2026-10-18 01:42:55,572 [INFO] Successfully fetched https://blinkit.com/cn/imported-snacks/cid/1237/2362 (562,105 bytes)
+2026-10-18 01:42:55,736 [INFO] Parsed 29 raw product instances from Imported Snacks
+2026-10-18 01:42:55,737 [INFO] [9/16] Scraping Fruits & Vegetables -> Fresh Vegetables
+2026-10-18 01:42:57,868 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/fresh-vegetables/cid/1487/1489
+2026-10-18 01:43:02,659 [INFO] Successfully fetched https://blinkit.com/cn/fresh-vegetables/cid/1487/1489 (756,881 bytes)
+2026-10-18 01:43:02,895 [INFO] Parsed 40 raw product instances from Fresh Vegetables
+2026-10-18 01:43:02,896 [INFO] [10/16] Scraping Fruits & Vegetables -> Fresh Fruits
+2026-10-18 01:43:05,103 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/fresh-fruits/cid/1487/1503
+2026-10-18 01:43:08,633 [INFO] Successfully fetched https://blinkit.com/cn/fresh-fruits/cid/1487/1503 (636,013 bytes)
+2026-10-18 01:43:08,876 [INFO] Parsed 36 raw product instances from Fresh Fruits
+2026-10-18 01:43:08,877 [INFO] [11/16] Scraping Staples -> Dry Fruits
+2026-10-18 01:43:11,639 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/dry-fruits/cid/1557/1160
+2026-10-18 01:43:16,362 [INFO] Successfully fetched https://blinkit.com/cn/dry-fruits/cid/1557/1160 (792,174 bytes)
+2026-10-18 01:43:16,572 [INFO] Parsed 40 raw product instances from Dry Fruits
+2026-10-18 01:43:16,572 [INFO] [12/16] Scraping Household -> Floor & Surface Cleaners
+2026-10-18 01:43:18,731 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/floor-surface-cleaners/cid/18/51
+2026-10-18 01:43:25,030 [INFO] Successfully fetched https://blinkit.com/cn/floor-surface-cleaners/cid/18/51 (1,082,464 bytes)
+2026-10-18 01:43:25,311 [INFO] Parsed 54 raw product instances from Floor & Surface Cleaners
+2026-10-18 01:43:25,311 [INFO] [13/16] Scraping Household -> Toilet & Bathroom Cleaners
+2026-10-18 01:43:27,941 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/toilet-bathroom-cleaners/cid/18/987
+2026-10-18 01:43:47,997 [INFO] Successfully fetched https://blinkit.com/cn/toilet-bathroom-cleaners/cid/18/987 (1,465,938 bytes)
+2026-10-18 01:43:48,308 [INFO] Parsed 74 raw product instances from Toilet & Bathroom Cleaners
+2026-10-18 01:43:48,309 [INFO] [14/16] Scraping Personal Care -> Face Cleaning
+2026-10-18 01:43:51,374 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/face-cleaning/cid/163/1117
+2026-10-18 01:43:57,283 [INFO] Successfully fetched https://blinkit.com/cn/face-cleaning/cid/163/1117 (925,114 bytes)
+2026-10-18 01:43:57,541 [INFO] Parsed 44 raw product instances from Face Cleaning
+2026-10-18 01:43:57,542 [INFO] [15/16] Scraping Instant & Frozen -> Frozen Veg Snacks
+2026-10-18 01:44:00,620 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/frozen-veg-snacks/cid/15/1413
+2026-10-18 01:44:05,688 [INFO] Successfully fetched https://blinkit.com/cn/frozen-veg-snacks/cid/15/1413 (627,050 bytes)
+2026-10-18 01:44:05,891 [INFO] Parsed 32 raw product instances from Frozen Veg Snacks
+2026-10-18 01:44:05,891 [INFO] [16/16] Scraping Instant & Frozen -> Frozen Non Veg Snacks
+2026-10-18 01:44:08,072 [INFO] Fetching URL [Attempt 1/3]: https://blinkit.com/cn/frozen-non-veg-snacks/cid/15/1412
+2026-10-18 01:44:10,437 [INFO] Successfully fetched https://blinkit.com/cn/frozen-non-veg-snacks/cid/15/1412 (613,643 bytes)
+2026-10-18 01:44:10,716 [INFO] Parsed 30 raw product instances from Frozen Non Veg Snacks
+2026-10-18 01:44:10,733 [INFO] Total raw observations collected: 744
+2026-10-18 01:44:10,766 [INFO] Saved raw observations to: C:\Users\Sunny-Cherry\Desktop\BA\BA_Project\data_pipeline\raw_product_observations.csv
+2026-10-18 01:44:10,803 [INFO] Saved cleaned catalogue (609 distinct products) to: C:\Users\Sunny-Cherry\Desktop\BA\BA_Project\data_pipeline\cleaned_product_catalogue.csv

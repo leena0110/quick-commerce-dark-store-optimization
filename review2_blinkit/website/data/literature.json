@@ -1,0 +1,74 @@
+[
+  {
+    "Paper_ID": "REF_01",
+    "Citation": "Makridakis, S., Spiliotis, E., & Assimakopoulos, V. (2022). M5 accuracy competition: Results, findings, and conclusions. International Journal of Forecasting, 38(4), 1346-1364.",
+    "DOI": "10.1016/j.ijforecast.2021.11.013",
+    "Research_Question": "Which forecasting methods achieve superior accuracy in hierarchical retail product sales?",
+    "Data_Source": "Walmart hierarchical retail sales data (42,840 time series)",
+    "Methods": "XGBoost, LightGBM, ES, ARIMA, Deep Learning, Naive Baselines",
+    "Evaluation_Metrics": "WRMSSE, RMSSE, MAE, RMSE",
+    "Verified_Findings": "Machine learning tree-based ensembles (LightGBM/XGBoost) with lag and rolling features significantly outperformed statistical methods.",
+    "Limitations": "Focused on traditional hypermarket retail; does not address 10-minute quick-commerce replenishment cycles.",
+    "Relevance_To_Project": "Direct foundation for Unit 3 Method 1 (Time-Series Forecasting model comparison using lag/rolling features)."
+  },
+  {
+    "Paper_ID": "REF_02",
+    "Citation": "Bergsma, R., de Ruijt, C., & Bhulai, S. (2025). A systematic review of machine learning approaches in inventory control optimization. Operations Research Perspectives, 12, 100367.",
+    "DOI": "10.1016/j.orp.2025.100367",
+    "Research_Question": "How is machine learning integrated into multi-echelon inventory control and replenishment?",
+    "Data_Source": "Systematic review of 122 peer-reviewed operations research studies",
+    "Methods": "Taxonomy classification: Separate estimation vs. Static/Dynamic ML integration",
+    "Evaluation_Metrics": "Service level, holding cost, fill rate, backorder minimization",
+    "Verified_Findings": "Separate estimation (demand forecasting) followed by optimization remains the most robust, interpretable industrial workflow.",
+    "Limitations": "Few empirical applications on hyperlocal micro-fulfillment centers (dark stores).",
+    "Relevance_To_Project": "Theoretically justifies our two-stage architecture: Day-ahead demand estimation followed by dark-store reorder thresholds."
+  },
+  {
+    "Paper_ID": "REF_03",
+    "Citation": "Mukherjee, T., Pandit, K., Jani, H., Jha, P. K., et al. (2023). Enhancing Retail Strategies through Apriori, ECLAT & FP Growth Algorithms in Market Basket Analysis. IJRITCC, 11(9), 9637.",
+    "DOI": "10.17762/ijritcc.v11i9.9637",
+    "Research_Question": "How do Apriori, ECLAT, and FP-Growth compare in mining frequent itemsets for retail bundling?",
+    "Data_Source": "Supermarket transaction point-of-sale logs",
+    "Methods": "Apriori (breadth-first candidate generation) vs. FP-Growth (prefix tree compression)",
+    "Evaluation_Metrics": "Execution time (seconds), memory footprint, rule count, Lift, Confidence",
+    "Verified_Findings": "FP-Growth executes 3x-6x faster than Apriori on dense transaction datasets while producing identical mathematical support/confidence rules.",
+    "Limitations": "Tested on static baskets without time-of-day or hyper-local delivery constraints.",
+    "Relevance_To_Project": "Direct methodological blueprint for Unit 3 Method 2 (comparative evaluation of Apriori and FP-Growth)."
+  },
+  {
+    "Paper_ID": "REF_04",
+    "Citation": "Hossain, M., Sattar, A. H. M. S., & Paul, M. K. (2019). Market Basket Analysis Using Apriori and FP Growth Algorithm. IEEE ICCIT, 9038197.",
+    "DOI": "10.1109/ICCIT48885.2019.9038197",
+    "Research_Question": "What are the computational trade-offs of association rule algorithms on retail basket sets?",
+    "Data_Source": "E-commerce grocery basket datasets",
+    "Methods": "Apriori algorithm, FP-Tree construction, Rule pruning by minimum confidence",
+    "Evaluation_Metrics": "Support, Confidence, Lift, Execution time across varying min_support thresholds",
+    "Verified_Findings": "Candidate item generation in Apriori causes exponential bottlenecks at low support (<1%), while FP-tree avoids multiple disk passes.",
+    "Limitations": "Synthetic or generic retail data lacking category hierarchical classification.",
+    "Relevance_To_Project": "Direct benchmark for our sensitivity analysis across support (0.01 to 0.05) and confidence (0.2 to 0.5) thresholds."
+  },
+  {
+    "Paper_ID": "REF_05",
+    "Citation": "Redseer Strategy Consultants (2023). Quick Commerce: Decoding the $5B+ Opportunity in India. Industry Benchmark Report.",
+    "DOI": "https://redseer.com/reports/quick-commerce-india-2023",
+    "Research_Question": "What are the temporal ordering dynamics and consumer basket profiles in Indian quick commerce?",
+    "Data_Source": "Pan-India dark store operational telemetry (Delhi NCR, Bengaluru, Mumbai)",
+    "Methods": "Cohort analysis, time-of-day purchase distribution, category velocity tracking",
+    "Evaluation_Metrics": "Order frequency, category share, morning/evening volume distribution, AOV",
+    "Verified_Findings": "62% of dairy/bakery orders occur between 6:30-9:30 AM; snacks and beverages peak 5:00-9:00 PM; weekend order volume increases by ~22%.",
+    "Limitations": "Proprietary consulting report; underlying micro-level transaction logs not publicly downloadable.",
+    "Relevance_To_Project": "Authoritative empirical justification for our synthetic transaction generation time-of-day probability distributions."
+  },
+  {
+    "Paper_ID": "REF_06",
+    "Citation": "Bain & Company (2023). How India Shops Online: E-Retail Report. Industry Market Study.",
+    "DOI": "https://www.bain.com/insights/how-india-shops-online-2023",
+    "Research_Question": "How does quick-commerce shopper basket composition differ from traditional scheduled e-commerce?",
+    "Data_Source": "Consumer survey and merchant transaction aggregates across metro cities",
+    "Methods": "Basket item affinity analysis, purchase frequency clustering",
+    "Evaluation_Metrics": "Items per order, unplanned impulse ratio, category overlap",
+    "Verified_Findings": "Quick-commerce baskets average 2 to 5 items with high urgency; cross-category bundling between breakfast staples is high.",
+    "Limitations": "Macro-level consumer trends rather than store-level SKU optimization.",
+    "Relevance_To_Project": "Justifies simulated basket item counts (mean 3.06 items) and high co-purchase affinity rules."
+  }
+]

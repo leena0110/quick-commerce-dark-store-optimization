@@ -1,0 +1,102 @@
+[
+  {
+    "antecedents_str": "The Baker's Dozen Malabar Paratha - Ready to Cook",
+    "consequents_str": "Aashirvaad Malabar Paratha (Heat & Eat)",
+    "support": 0.0166,
+    "confidence": 0.2937,
+    "lift": 5.1056,
+    "leverage": 0.0133,
+    "conviction": 1.3344,
+    "rule_label": "The Baker's Dozen Malabar Paratha - Ready to Cook  \u2794  Aashirvaad Malabar Paratha (Heat & Eat)"
+  },
+  {
+    "antecedents_str": "Aashirvaad Malabar Paratha (Heat & Eat)",
+    "consequents_str": "The Baker's Dozen Malabar Paratha - Ready to Cook",
+    "support": 0.0166,
+    "confidence": 0.288,
+    "lift": 5.1056,
+    "leverage": 0.0133,
+    "conviction": 1.3253,
+    "rule_label": "Aashirvaad Malabar Paratha (Heat & Eat)  \u2794  The Baker's Dozen Malabar Paratha - Ready to Cook"
+  },
+  {
+    "antecedents_str": "Spring Onion (Hari Pyaz)",
+    "consequents_str": "Hybrid Tomato (Tamatar)",
+    "support": 0.0338,
+    "confidence": 0.2835,
+    "lift": 2.2623,
+    "leverage": 0.0188,
+    "conviction": 1.2208,
+    "rule_label": "Spring Onion (Hari Pyaz)  \u2794  Hybrid Tomato (Tamatar)"
+  },
+  {
+    "antecedents_str": "Hybrid Tomato (Tamatar)",
+    "consequents_str": "Spring Onion (Hari Pyaz)",
+    "support": 0.0338,
+    "confidence": 0.2694,
+    "lift": 2.2623,
+    "leverage": 0.0188,
+    "conviction": 1.2058,
+    "rule_label": "Hybrid Tomato (Tamatar)  \u2794  Spring Onion (Hari Pyaz)"
+  },
+  {
+    "antecedents_str": "Mr. Apple New Zealand Royal Gala",
+    "consequents_str": "Baby Banana",
+    "support": 0.0133,
+    "confidence": 0.259,
+    "lift": 2.2611,
+    "leverage": 0.0074,
+    "conviction": 1.1949,
+    "rule_label": "Mr. Apple New Zealand Royal Gala  \u2794  Baby Banana"
+  },
+  {
+    "antecedents_str": "Baby Banana",
+    "consequents_str": "Mr. Apple New Zealand Royal Gala",
+    "support": 0.0133,
+    "confidence": 0.1164,
+    "lift": 2.2611,
+    "leverage": 0.0074,
+    "conviction": 1.0735,
+    "rule_label": "Baby Banana  \u2794  Mr. Apple New Zealand Royal Gala"
+  },
+  {
+    "antecedents_str": "Evian Natural Mineral Water",
+    "consequents_str": "Godrej Yummiez Cheesy Pizza Cheese Sticks",
+    "support": 0.0107,
+    "confidence": 0.1137,
+    "lift": 2.1097,
+    "leverage": 0.0056,
+    "conviction": 1.0675,
+    "rule_label": "Evian Natural Mineral Water  \u2794  Godrej Yummiez Cheesy Pizza Cheese Sticks"
+  },
+  {
+    "antecedents_str": "Godrej Yummiez Cheesy Pizza Cheese Sticks",
+    "consequents_str": "Evian Natural Mineral Water",
+    "support": 0.0107,
+    "confidence": 0.199,
+    "lift": 2.1097,
+    "leverage": 0.0056,
+    "conviction": 1.1307,
+    "rule_label": "Godrej Yummiez Cheesy Pizza Cheese Sticks  \u2794  Evian Natural Mineral Water"
+  },
+  {
+    "antecedents_str": "Haldiram's Aloo Pyaz Paratha (Frozen)",
+    "consequents_str": "Amul Buffalo A2 Milk",
+    "support": 0.0167,
+    "confidence": 0.2361,
+    "lift": 1.9674,
+    "leverage": 0.0082,
+    "conviction": 1.152,
+    "rule_label": "Haldiram's Aloo Pyaz Paratha (Frozen)  \u2794  Amul Buffalo A2 Milk"
+  },
+  {
+    "antecedents_str": "Amul Buffalo A2 Milk",
+    "consequents_str": "Haldiram's Aloo Pyaz Paratha (Frozen)",
+    "support": 0.0167,
+    "confidence": 0.1392,
+    "lift": 1.9674,
+    "leverage": 0.0082,
+    "conviction": 1.0795,
+    "rule_label": "Amul Buffalo A2 Milk  \u2794  Haldiram's Aloo Pyaz Paratha (Frozen)"
+  }
+]

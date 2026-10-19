@@ -1,0 +1,380 @@
+[
+  {
+    "antecedents_str": "The Baker's Dozen Malabar Paratha - Ready to Cook",
+    "consequents_str": "Aashirvaad Malabar Paratha (Heat & Eat)",
+    "support": 0.0166,
+    "confidence": 0.2937,
+    "lift": 5.1056,
+    "leverage": 0.0133,
+    "conviction": 1.3344
+  },
+  {
+    "antecedents_str": "Aashirvaad Malabar Paratha (Heat & Eat)",
+    "consequents_str": "The Baker's Dozen Malabar Paratha - Ready to Cook",
+    "support": 0.0166,
+    "confidence": 0.288,
+    "lift": 5.1056,
+    "leverage": 0.0133,
+    "conviction": 1.3253
+  },
+  {
+    "antecedents_str": "Spring Onion (Hari Pyaz)",
+    "consequents_str": "Hybrid Tomato (Tamatar)",
+    "support": 0.0338,
+    "confidence": 0.2835,
+    "lift": 2.2623,
+    "leverage": 0.0188,
+    "conviction": 1.2208
+  },
+  {
+    "antecedents_str": "Hybrid Tomato (Tamatar)",
+    "consequents_str": "Spring Onion (Hari Pyaz)",
+    "support": 0.0338,
+    "confidence": 0.2694,
+    "lift": 2.2623,
+    "leverage": 0.0188,
+    "conviction": 1.2058
+  },
+  {
+    "antecedents_str": "Mr. Apple New Zealand Royal Gala",
+    "consequents_str": "Baby Banana",
+    "support": 0.0133,
+    "confidence": 0.259,
+    "lift": 2.2611,
+    "leverage": 0.0074,
+    "conviction": 1.1949
+  },
+  {
+    "antecedents_str": "Baby Banana",
+    "consequents_str": "Mr. Apple New Zealand Royal Gala",
+    "support": 0.0133,
+    "confidence": 0.1164,
+    "lift": 2.2611,
+    "leverage": 0.0074,
+    "conviction": 1.0735
+  },
+  {
+    "antecedents_str": "Evian Natural Mineral Water",
+    "consequents_str": "Godrej Yummiez Cheesy Pizza Cheese Sticks",
+    "support": 0.0107,
+    "confidence": 0.1137,
+    "lift": 2.1097,
+    "leverage": 0.0056,
+    "conviction": 1.0675
+  },
+  {
+    "antecedents_str": "Godrej Yummiez Cheesy Pizza Cheese Sticks",
+    "consequents_str": "Evian Natural Mineral Water",
+    "support": 0.0107,
+    "confidence": 0.199,
+    "lift": 2.1097,
+    "leverage": 0.0056,
+    "conviction": 1.1307
+  },
+  {
+    "antecedents_str": "Haldiram's Aloo Pyaz Paratha (Frozen)",
+    "consequents_str": "Amul Buffalo A2 Milk",
+    "support": 0.0167,
+    "confidence": 0.2361,
+    "lift": 1.9674,
+    "leverage": 0.0082,
+    "conviction": 1.152
+  },
+  {
+    "antecedents_str": "Amul Buffalo A2 Milk",
+    "consequents_str": "Haldiram's Aloo Pyaz Paratha (Frozen)",
+    "support": 0.0167,
+    "confidence": 0.1392,
+    "lift": 1.9674,
+    "leverage": 0.0082,
+    "conviction": 1.0795
+  },
+  {
+    "antecedents_str": "Kettle Studio Sweet Chilli With Lime & Basil Potato Chips",
+    "consequents_str": "7UP Nimbooz with Lemon Lime Soft Drink",
+    "support": 0.04,
+    "confidence": 0.3256,
+    "lift": 1.8688,
+    "leverage": 0.0186,
+    "conviction": 1.2245
+  },
+  {
+    "antecedents_str": "7UP Nimbooz with Lemon Lime Soft Drink",
+    "consequents_str": "Kettle Studio Sweet Chilli With Lime & Basil Potato Chips",
+    "support": 0.04,
+    "confidence": 0.2296,
+    "lift": 1.8688,
+    "leverage": 0.0186,
+    "conviction": 1.1385
+  },
+  {
+    "antecedents_str": "Mother Dairy Cow Milk",
+    "consequents_str": "English Oven Milk Bread",
+    "support": 0.0358,
+    "confidence": 0.2422,
+    "lift": 1.8534,
+    "leverage": 0.0165,
+    "conviction": 1.1472
+  },
+  {
+    "antecedents_str": "English Oven Milk Bread",
+    "consequents_str": "Mother Dairy Cow Milk",
+    "support": 0.0358,
+    "confidence": 0.2743,
+    "lift": 1.8534,
+    "leverage": 0.0165,
+    "conviction": 1.174
+  },
+  {
+    "antecedents_str": "Potato (Aloo)",
+    "consequents_str": "Hybrid Tomato (Tamatar)",
+    "support": 0.0271,
+    "confidence": 0.2294,
+    "lift": 1.8306,
+    "leverage": 0.0123,
+    "conviction": 1.1351
+  },
+  {
+    "antecedents_str": "Hybrid Tomato (Tamatar)",
+    "consequents_str": "Potato (Aloo)",
+    "support": 0.0271,
+    "confidence": 0.216,
+    "lift": 1.8306,
+    "leverage": 0.0123,
+    "conviction": 1.125
+  },
+  {
+    "antecedents_str": "Potato (Aloo)",
+    "consequents_str": "Spring Onion (Hari Pyaz)",
+    "support": 0.0252,
+    "confidence": 0.2135,
+    "lift": 1.7926,
+    "leverage": 0.0111,
+    "conviction": 1.12
+  },
+  {
+    "antecedents_str": "Spring Onion (Hari Pyaz)",
+    "consequents_str": "Potato (Aloo)",
+    "support": 0.0252,
+    "confidence": 0.2115,
+    "lift": 1.7926,
+    "leverage": 0.0111,
+    "conviction": 1.1186
+  },
+  {
+    "antecedents_str": "McCain French Fries",
+    "consequents_str": "Kettle Studio Sweet Chilli With Lime & Basil Potato Chips",
+    "support": 0.0217,
+    "confidence": 0.2035,
+    "lift": 1.6561,
+    "leverage": 0.0086,
+    "conviction": 1.1012
+  },
+  {
+    "antecedents_str": "Kettle Studio Sweet Chilli With Lime & Basil Potato Chips",
+    "consequents_str": "McCain French Fries",
+    "support": 0.0217,
+    "confidence": 0.1768,
+    "lift": 1.6561,
+    "leverage": 0.0086,
+    "conviction": 1.0851
+  },
+  {
+    "antecedents_str": "7UP Nimbooz with Lemon Lime Soft Drink",
+    "consequents_str": "Haldiram's Lite Chiwda Namkeen",
+    "support": 0.0157,
+    "confidence": 0.09,
+    "lift": 1.6323,
+    "leverage": 0.0061,
+    "conviction": 1.0383
+  },
+  {
+    "antecedents_str": "Haldiram's Lite Chiwda Namkeen",
+    "consequents_str": "7UP Nimbooz with Lemon Lime Soft Drink",
+    "support": 0.0157,
+    "confidence": 0.2844,
+    "lift": 1.6323,
+    "leverage": 0.0061,
+    "conviction": 1.154
+  },
+  {
+    "antecedents_str": "Tata Sampann Raw Peanut",
+    "consequents_str": "Whole Farm Premium Raisins",
+    "support": 0.0119,
+    "confidence": 0.2112,
+    "lift": 1.5542,
+    "leverage": 0.0043,
+    "conviction": 1.0955
+  },
+  {
+    "antecedents_str": "Whole Farm Premium Raisins",
+    "consequents_str": "Tata Sampann Raw Peanut",
+    "support": 0.0119,
+    "confidence": 0.0879,
+    "lift": 1.5542,
+    "leverage": 0.0043,
+    "conviction": 1.0344
+  },
+  {
+    "antecedents_str": "English Oven Milk Bread",
+    "consequents_str": "Country Delight Buffalo Fresh Milk",
+    "support": 0.0336,
+    "confidence": 0.2574,
+    "lift": 1.5203,
+    "leverage": 0.0115,
+    "conviction": 1.1186
+  },
+  {
+    "antecedents_str": "Country Delight Buffalo Fresh Milk",
+    "consequents_str": "English Oven Milk Bread",
+    "support": 0.0336,
+    "confidence": 0.1987,
+    "lift": 1.5203,
+    "leverage": 0.0115,
+    "conviction": 1.0849
+  },
+  {
+    "antecedents_str": "Country Delight Buffalo Fresh Milk",
+    "consequents_str": "The Health Factory Zero Maida Whole Wheat Bread",
+    "support": 0.0148,
+    "confidence": 0.0873,
+    "lift": 1.5001,
+    "leverage": 0.0049,
+    "conviction": 1.0319
+  },
+  {
+    "antecedents_str": "The Health Factory Zero Maida Whole Wheat Bread",
+    "consequents_str": "Country Delight Buffalo Fresh Milk",
+    "support": 0.0148,
+    "confidence": 0.254,
+    "lift": 1.5001,
+    "leverage": 0.0049,
+    "conviction": 1.1135
+  },
+  {
+    "antecedents_str": "McCain French Fries",
+    "consequents_str": "7UP Nimbooz with Lemon Lime Soft Drink",
+    "support": 0.0278,
+    "confidence": 0.26,
+    "lift": 1.4924,
+    "leverage": 0.0092,
+    "conviction": 1.116
+  },
+  {
+    "antecedents_str": "7UP Nimbooz with Lemon Lime Soft Drink",
+    "consequents_str": "McCain French Fries",
+    "support": 0.0278,
+    "confidence": 0.1593,
+    "lift": 1.4924,
+    "leverage": 0.0092,
+    "conviction": 1.0625
+  },
+  {
+    "antecedents_str": "The Health Factory Zero Maida Whole Wheat Bread",
+    "consequents_str": "Mother Dairy Cow Milk",
+    "support": 0.0121,
+    "confidence": 0.2086,
+    "lift": 1.4095,
+    "leverage": 0.0035,
+    "conviction": 1.0766
+  },
+  {
+    "antecedents_str": "Mother Dairy Cow Milk",
+    "consequents_str": "The Health Factory Zero Maida Whole Wheat Bread",
+    "support": 0.0121,
+    "confidence": 0.0821,
+    "lift": 1.4095,
+    "leverage": 0.0035,
+    "conviction": 1.026
+  },
+  {
+    "antecedents_str": "Baby Banana",
+    "consequents_str": "Amul Buffalo A2 Milk",
+    "support": 0.0187,
+    "confidence": 0.1631,
+    "lift": 1.3591,
+    "leverage": 0.0049,
+    "conviction": 1.0515
+  },
+  {
+    "antecedents_str": "Amul Buffalo A2 Milk",
+    "consequents_str": "Baby Banana",
+    "support": 0.0187,
+    "confidence": 0.1557,
+    "lift": 1.3591,
+    "leverage": 0.0049,
+    "conviction": 1.0487
+  },
+  {
+    "antecedents_str": "Koh Kae Salted Peanut Namkeen",
+    "consequents_str": "Mother Dairy Cow Milk",
+    "support": 0.0202,
+    "confidence": 0.1984,
+    "lift": 1.3408,
+    "leverage": 0.0051,
+    "conviction": 1.0629
+  },
+  {
+    "antecedents_str": "Mother Dairy Cow Milk",
+    "consequents_str": "Koh Kae Salted Peanut Namkeen",
+    "support": 0.0202,
+    "confidence": 0.1365,
+    "lift": 1.3408,
+    "leverage": 0.0051,
+    "conviction": 1.0402
+  },
+  {
+    "antecedents_str": "Pluckk Valencia Orange Cold Pressed Juice by Pluckk",
+    "consequents_str": "Kettle Studio Sweet Chilli With Lime & Basil Potato Chips",
+    "support": 0.0114,
+    "confidence": 0.1632,
+    "lift": 1.3285,
+    "leverage": 0.0028,
+    "conviction": 1.0482
+  },
+  {
+    "antecedents_str": "Kettle Studio Sweet Chilli With Lime & Basil Potato Chips",
+    "consequents_str": "Pluckk Valencia Orange Cold Pressed Juice by Pluckk",
+    "support": 0.0114,
+    "confidence": 0.093,
+    "lift": 1.3285,
+    "leverage": 0.0028,
+    "conviction": 1.0253
+  },
+  {
+    "antecedents_str": "Amul Buffalo A2 Milk",
+    "consequents_str": "Mother Dairy Cow Milk",
+    "support": 0.0228,
+    "confidence": 0.19,
+    "lift": 1.284,
+    "leverage": 0.005,
+    "conviction": 1.0519
+  },
+  {
+    "antecedents_str": "Mother Dairy Cow Milk",
+    "consequents_str": "Amul Buffalo A2 Milk",
+    "support": 0.0228,
+    "confidence": 0.1541,
+    "lift": 1.284,
+    "leverage": 0.005,
+    "conviction": 1.0403
+  },
+  {
+    "antecedents_str": "Baby Banana",
+    "consequents_str": "Mother Dairy Cow Milk",
+    "support": 0.0216,
+    "confidence": 0.1888,
+    "lift": 1.2754,
+    "leverage": 0.0047,
+    "conviction": 1.0502
+  },
+  {
+    "antecedents_str": "Mother Dairy Cow Milk",
+    "consequents_str": "Baby Banana",
+    "support": 0.0216,
+    "confidence": 0.1461,
+    "lift": 1.2754,
+    "leverage": 0.0047,
+    "conviction": 1.0369
+  }
+]
