@@ -112,3 +112,14 @@ Top rules found (support ≥ 2%, confidence ≥ 60%, lift ≥ 2.0):
 |---|---|
 | `main` | Original project files |
 | `review1-review2-complete` | All notebooks (01–07), React dashboard, results CSVs, README |
+| `review2` | Complete Review 1 & 2 integration + Dark store inventory optimization, dynamic safety stock, spatial picker path routing, and rubric verification harness |
+
+---
+
+## Team 4 — 23CSE452 Capstone Project
+- **Leena Sri K** (CB.SC.U4CSE23526) — Synthetic Data Architecture & Baseline EDA
+- **A.C. Sanhitha Reddy** (CB.SC.U4CSE23206) — Scraper, Time-Series (SARIMA), Association Rules, Dashboard
+- **Ande Taraka Srinivas** (CB.SC.U4CSE23212) — Inventory Safety Stock Optimization, Dynamic ROP, Spatial Shelf Layout, Cross-Validation Tuning
+- **Kanish Kumaran M** (CB.SC.U4CSE23424) — Literature Survey & Research Matrix
+- **Ajay N Mukunth** (CB.SC.U4CSE23006) — Simulation Verification & Presentation Design
+
