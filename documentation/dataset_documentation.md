@@ -341,3 +341,5 @@ The co-purchase probabilities embedded in `CO_PURCHASE_RULES` were designed to r
 These rules are intentionally embedded in the data generation and are **not** directly visible in the dataset — they must be discovered through Association Rule Mining in Review 2.
 
 <!-- Note: verified all 58 products load correctly in basket generation -->
+
+<!-- ARM minimum support threshold: 0.01 (1%) for sparse transaction data -->
