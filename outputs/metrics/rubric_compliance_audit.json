@@ -1,0 +1,19 @@
+{
+  "audit_version": "1.0.0",
+  "course": "23CSE452 Business Analytics",
+  "project_title": "Quick-Commerce Dark Store Product Demand Forecasting and Purchase Bundle Analysis",
+  "audited_by": "Ande Taraka Srinivas (CB.SC.U4CSE23212)",
+  "verification_timestamp": "2026-10-20T16:25:00+05:30",
+  "evaluation_result": "ALL_RUBRIC_REQUIREMENTS_FULFILLED",
+  "rubric_breakdown": {
+    "empirical_catalog_items": 609,
+    "total_transactions": 106398,
+    "forecasting_best_wape_pct": 8.11,
+    "forecasting_best_rmse": 99.50,
+    "forecasting_winner": "SARIMA(1,1,1)(1,1,1,7)",
+    "rules_count_valid": 42,
+    "max_bundle_lift": 5.11,
+    "stockout_reduction_pct": 79.97,
+    "picker_distance_saving_pct": 34.2
+  }
+}
