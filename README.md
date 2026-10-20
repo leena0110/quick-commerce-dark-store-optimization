@@ -1,6 +1,7 @@
 # Review 1 → Review 2: Full Project README
 # Quick Commerce Dark-Store Optimisation – Blinkit
 
+# Link: https://quickcast-jet.vercel.app/
 This document explains the entire project in simple terms: what was done, what models were used, and what the outputs mean.
 
 ---
