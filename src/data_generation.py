@@ -594,3 +594,5 @@ if __name__ == "__main__":
     print(df.head(10).to_string())
 
 # Review 2 note: transaction data preserves order-level grouping for ARM
+
+# Basket data is preserved at order level — suitable for Apriori ARM
