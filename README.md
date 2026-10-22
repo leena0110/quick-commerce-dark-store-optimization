@@ -404,3 +404,5 @@ The following tasks are planned for Review 2:
 <!-- Review 2 development started: initial planning phase -->
 
 <!-- ARM analysis: Apriori algorithm selected for basket analysis -->
+
+<!-- EDA extended: monthly trend analysis added for time-series prep -->
