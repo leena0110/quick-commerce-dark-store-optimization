@@ -343,3 +343,5 @@ These rules are intentionally embedded in the data generation and are **not** di
 <!-- Note: verified all 58 products load correctly in basket generation -->
 
 <!-- ARM minimum support threshold: 0.01 (1%) for sparse transaction data -->
+
+<!-- Time-series: daily aggregation per SKU per store produces 183-day series -->
