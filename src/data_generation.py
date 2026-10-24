@@ -596,3 +596,5 @@ if __name__ == "__main__":
 # Review 2 note: transaction data preserves order-level grouping for ARM
 
 # Basket data is preserved at order level — suitable for Apriori ARM
+
+# Monthly multipliers reflect Indian seasonal demand: summer + festive peaks
