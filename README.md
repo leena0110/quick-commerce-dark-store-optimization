@@ -406,3 +406,5 @@ The following tasks are planned for Review 2:
 <!-- ARM analysis: Apriori algorithm selected for basket analysis -->
 
 <!-- EDA extended: monthly trend analysis added for time-series prep -->
+
+<!-- Prophet model selected for time-series due to built-in seasonality handling -->
