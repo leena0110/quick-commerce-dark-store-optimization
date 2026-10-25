@@ -357,3 +357,5 @@ These rules are intentionally embedded in the data generation and are **not** di
 <!-- Review 2 notebook: will follow same structure as review1_analysis.ipynb -->
 
 <!-- Oct 25: decided minimum support = 0.01, min confidence = 0.3 -->
+
+<!-- Oct 25: one-hot encoded transaction matrix prepared for Apriori -->
