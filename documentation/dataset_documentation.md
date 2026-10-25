@@ -359,3 +359,5 @@ These rules are intentionally embedded in the data generation and are **not** di
 <!-- Oct 25: decided minimum support = 0.01, min confidence = 0.3 -->
 
 <!-- Oct 25: one-hot encoded transaction matrix prepared for Apriori -->
+
+<!-- Oct 25: ARM output will feed into discount recommendation engine -->
