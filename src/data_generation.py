@@ -610,3 +610,5 @@ if __name__ == "__main__":
 # Final note: random seed 42 ensures reproducibility across both reviews
 
 # Oct 25: confirmed transaction data has ~34700 unique orders for ARM
+
+# Oct 25: lift > 1.5 filter will remove weak/coincidental associations
