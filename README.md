@@ -420,3 +420,5 @@ The following tasks are planned for Review 2:
 <!-- Review 2 development complete: analysis ready for final notebook integration -->
 
 <!-- Oct 25: reviewed ARM algorithm options: Apriori vs FP-Growth -->
+
+<!-- Oct 25: basket data grouped by Order_ID for transaction encoding -->
