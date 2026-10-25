@@ -608,3 +608,5 @@ if __name__ == "__main__":
 # Output: ARM rules and forecast plots will be saved in outputs/ directory
 
 # Final note: random seed 42 ensures reproducibility across both reviews
+
+# Oct 25: confirmed transaction data has ~34700 unique orders for ARM
