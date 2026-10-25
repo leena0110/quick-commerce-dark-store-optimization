@@ -418,3 +418,5 @@ The following tasks are planned for Review 2:
 <!-- Business output: bundle discount recommendations based on high-confidence rules -->
 
 <!-- Review 2 development complete: analysis ready for final notebook integration -->
+
+<!-- Oct 25: reviewed ARM algorithm options: Apriori vs FP-Growth -->
