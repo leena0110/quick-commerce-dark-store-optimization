@@ -422,3 +422,5 @@ The following tasks are planned for Review 2:
 <!-- Oct 25: reviewed ARM algorithm options: Apriori vs FP-Growth -->
 
 <!-- Oct 25: basket data grouped by Order_ID for transaction encoding -->
+
+<!-- Oct 25: top bundles identified: Chips+Drink, Rice+Dal, Pasta+Sauce -->
