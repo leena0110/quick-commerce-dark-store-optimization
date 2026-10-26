@@ -345,3 +345,5 @@ These rules are intentionally embedded in the data generation and are **not** di
 <!-- ARM minimum support threshold: 0.01 (1%) for sparse transaction data -->
 
 <!-- Time-series: daily aggregation per SKU per store produces 183-day series -->
+
+<!-- ARIMA parameter tuning: ACF/PACF plots will guide p, d, q selection -->
