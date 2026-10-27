@@ -598,3 +598,5 @@ if __name__ == "__main__":
 # Basket data is preserved at order level — suitable for Apriori ARM
 
 # Monthly multipliers reflect Indian seasonal demand: summer + festive peaks
+
+# Seasonal patterns in data: daily + weekly + monthly cycles embedded
