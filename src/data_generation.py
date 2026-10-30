@@ -600,3 +600,5 @@ if __name__ == "__main__":
 # Monthly multipliers reflect Indian seasonal demand: summer + festive peaks
 
 # Seasonal patterns in data: daily + weekly + monthly cycles embedded
+
+# Co-purchase rules seed the ARM discovery — ground truth for validation
