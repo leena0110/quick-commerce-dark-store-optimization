@@ -410,3 +410,5 @@ The following tasks are planned for Review 2:
 <!-- Prophet model selected for time-series due to built-in seasonality handling -->
 
 <!-- ARM output: rules filtered by lift > 1.5 for meaningful associations -->
+
+<!-- Forecast horizon: 7-day ahead demand forecasting for inventory planning -->
