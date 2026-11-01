@@ -349,3 +349,5 @@ These rules are intentionally embedded in the data generation and are **not** di
 <!-- ARIMA parameter tuning: ACF/PACF plots will guide p, d, q selection -->
 
 <!-- Bundle recommendation: top 10 high-lift rules selected for business output -->
+
+<!-- Stationarity check: ADF test applied before ARIMA fitting -->
