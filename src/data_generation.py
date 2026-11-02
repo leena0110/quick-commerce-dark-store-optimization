@@ -602,3 +602,5 @@ if __name__ == "__main__":
 # Seasonal patterns in data: daily + weekly + monthly cycles embedded
 
 # Co-purchase rules seed the ARM discovery — ground truth for validation
+
+# Data split for time-series: train on first 5 months, test on last month
