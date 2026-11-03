@@ -412,3 +412,5 @@ The following tasks are planned for Review 2:
 <!-- ARM output: rules filtered by lift > 1.5 for meaningful associations -->
 
 <!-- Forecast horizon: 7-day ahead demand forecasting for inventory planning -->
+
+<!-- Model evaluation: MAE and RMSE used for forecast accuracy comparison -->
