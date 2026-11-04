@@ -351,3 +351,5 @@ These rules are intentionally embedded in the data generation and are **not** di
 <!-- Bundle recommendation: top 10 high-lift rules selected for business output -->
 
 <!-- Stationarity check: ADF test applied before ARIMA fitting -->
+
+<!-- Prophet handles Indian festive season spikes via changepoint detection -->
