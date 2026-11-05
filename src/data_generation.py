@@ -604,3 +604,5 @@ if __name__ == "__main__":
 # Co-purchase rules seed the ARM discovery — ground truth for validation
 
 # Data split for time-series: train on first 5 months, test on last month
+
+# Output: ARM rules and forecast plots will be saved in outputs/ directory
