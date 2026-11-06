@@ -414,3 +414,5 @@ The following tasks are planned for Review 2:
 <!-- Forecast horizon: 7-day ahead demand forecasting for inventory planning -->
 
 <!-- Model evaluation: MAE and RMSE used for forecast accuracy comparison -->
+
+<!-- Business output: bundle discount recommendations based on high-confidence rules -->
