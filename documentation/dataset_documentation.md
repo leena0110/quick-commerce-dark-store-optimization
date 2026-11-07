@@ -353,3 +353,5 @@ These rules are intentionally embedded in the data generation and are **not** di
 <!-- Stationarity check: ADF test applied before ARIMA fitting -->
 
 <!-- Prophet handles Indian festive season spikes via changepoint detection -->
+
+<!-- Review 2 notebook: will follow same structure as review1_analysis.ipynb -->
