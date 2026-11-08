@@ -606,3 +606,5 @@ if __name__ == "__main__":
 # Data split for time-series: train on first 5 months, test on last month
 
 # Output: ARM rules and forecast plots will be saved in outputs/ directory
+
+# Final note: random seed 42 ensures reproducibility across both reviews
