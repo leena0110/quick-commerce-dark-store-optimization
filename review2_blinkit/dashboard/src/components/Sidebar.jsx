@@ -11,7 +11,10 @@ import {
   Sun,
   Moon,
   Sparkles,
-  CheckCircle2
+  CheckCircle2,
+  Menu,
+  ChevronLeft,
+  Zap
 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
@@ -25,24 +28,56 @@ const navItems = [
   { path: '/recommendations', label: 'Dark Store Strategy', icon: Lightbulb },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ isOpen, setIsOpen }) {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <aside className="sidebar">
-      {/* Brand Header */}
-      <div className="sidebar-logo">
-        <div className="brand-badge">
-          <Sparkles size={12} />
-          <span>Quick Commerce Analytics</span>
+    <>
+      {/* Mobile / Collapsed floating toggle button if closed */}
+      {!isOpen && (
+        <button 
+          className="sidebar-floating-toggle"
+          onClick={() => setIsOpen(true)}
+          title="Open Navigation Menu"
+          aria-label="Open Navigation Menu"
+        >
+          <Menu size={20} />
+        </button>
+      )}
+
+      {/* Backdrop overlay for smaller screens */}
+      {isOpen && (
+        <div 
+          className="sidebar-backdrop" 
+          onClick={() => setIsOpen(false)} 
+        />
+      )}
+
+      <aside className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
+        {/* Brand Header */}
+        <div className="sidebar-logo">
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <div className="brand-badge">
+              <Sparkles size={12} />
+              <span>Quick Commerce Analytics</span>
+            </div>
+            <button 
+              className="sidebar-close-btn"
+              onClick={() => setIsOpen(!isOpen)}
+              title={isOpen ? "Collapse Menu" : "Expand Menu"}
+              aria-label="Toggle Navigation Menu"
+            >
+              <ChevronLeft size={18} />
+            </button>
+          </div>
+          <h1>
+            <span style={{ color: 'var(--blinkit-yellow)', display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+              <Zap size={18} fill="var(--blinkit-yellow)" /> Quick
+            </span>
+            <span style={{ color: 'var(--blinkit-green)' }}>Cast</span>
+          </h1>
+          <p>Dark Store Optimization & Forecasting</p>
         </div>
-        <h1>
-          <span style={{ color: 'var(--blinkit-yellow)' }}>blink</span>
-          <span style={{ color: 'var(--blinkit-green)' }}>it</span>
-          <span style={{ fontWeight: '500', fontSize: '13px', color: 'var(--text-secondary)', marginLeft: '4px' }}>Intelligence</span>
-        </h1>
-        <p>Dark Store Optimization (Review 2)</p>
-      </div>
 
       {/* Main Navigation */}
       <nav className="sidebar-nav">
@@ -81,12 +116,9 @@ export default function Sidebar() {
         <div className="sidebar-info">
           <div><strong>Course:</strong> 23CSE452 Business Analytics</div>
           <div>Amrita Vishwa Vidyapeetham</div>
-          <div style={{ marginTop: '4px', display: 'flex', alignItems: 'center', gap: '5px', color: 'var(--blinkit-green)', fontSize: '11px', fontWeight: '700' }}>
-            <CheckCircle2 size={13} />
-            <span>Rubric Verified</span>
-          </div>
         </div>
       </div>
     </aside>
+    </>
   );
 }

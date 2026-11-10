@@ -3,26 +3,41 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 import { ASSOCIATION_RULES, ALGORITHM_BENCHMARK } from '../data/projectData';
-import { ShoppingBag, Sliders, Zap, CheckCircle2, PackageCheck } from 'lucide-react';
+import { ShoppingBag, Sliders, Zap, CheckCircle2, PackageCheck, Search, ArrowUpDown, Filter } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 export default function AssociationRules() {
   const [minLift, setMinLift] = useState(1.5);
   const [selectedTheme, setSelectedTheme] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [sortBy, setSortBy] = useState('lift_desc');
   const { theme, chartColors } = useTheme();
 
   const themes = ['All', ...new Set(ASSOCIATION_RULES.map(r => r.theme))];
 
+  // Filter rules
   const filteredRules = ASSOCIATION_RULES.filter(rule => {
     const matchesLift = rule.lift >= minLift;
     const matchesTheme = selectedTheme === 'All' || rule.theme === selectedTheme;
-    return matchesLift && matchesTheme;
+    const matchesSearch = searchQuery === '' || 
+      rule.antecedent.toLowerCase().includes(searchQuery.toLowerCase()) || 
+      rule.consequent.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesLift && matchesTheme && matchesSearch;
+  });
+
+  // Sort rules
+  const sortedRules = [...filteredRules].sort((a, b) => {
+    if (sortBy === 'lift_desc') return b.lift - a.lift;
+    if (sortBy === 'lift_asc') return a.lift - b.lift;
+    if (sortBy === 'confidence_desc') return b.confidence - a.confidence;
+    if (sortBy === 'support_desc') return b.support - a.support;
+    return 0;
   });
 
   return (
     <div>
       <div className="page-header">
-        <span className="page-tag">Unit 3 Method 2</span>
+        <span className="page-tag">QuickCast Basket Mining</span>
         <h2>Market Basket Analysis & Bundle Discovery</h2>
         <p>
           Discovered cross-category product affinities across 30,296 multi-item transactions.
@@ -32,44 +47,87 @@ export default function AssociationRules() {
 
       {/* Filter Toolbar */}
       <div className="card" style={{ marginBottom: '24px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <Sliders size={20} color="var(--accent-secondary)" />
-            <div>
-              <div style={{ fontSize: '13px', fontWeight: '700', color: 'var(--text-primary)' }}>
-                Minimum Lift Filter: <span style={{ color: 'var(--blinkit-green)', fontSize: '15px' }}>{minLift.toFixed(2)}×</span>
-              </div>
-              <input 
-                type="range" 
-                min="1.15" 
-                max="5.0" 
-                step="0.05"
-                value={minLift}
-                onChange={(e) => setMinLift(parseFloat(e.target.value))}
-                style={{ width: '220px', cursor: 'pointer', accentColor: 'var(--blinkit-green)', marginTop: '6px' }}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+          
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
+            
+            {/* Search Input */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: '1', minWidth: '220px' }}>
+              <Search size={16} color="var(--text-muted)" />
+              <input
+                type="text"
+                placeholder="Search trigger or recommended product..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="custom-input"
+                style={{ width: '100%' }}
               />
             </div>
+
+            {/* Theme Dropdown Selector */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Filter size={16} color="var(--accent-secondary)" />
+              <label htmlFor="theme-select" style={{ fontSize: '13px', fontWeight: '700', color: 'var(--text-secondary)' }}>
+                Theme:
+              </label>
+              <select
+                id="theme-select"
+                value={selectedTheme}
+                onChange={(e) => setSelectedTheme(e.target.value)}
+                className="custom-select"
+              >
+                {themes.map(t => (
+                  <option key={t} value={t}>{t === 'All' ? 'All Themes' : t}</option>
+                ))}
+              </select>
+            </div>
+
+            {/* Sort Dropdown Selector */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <ArrowUpDown size={16} color="var(--blinkit-green)" />
+              <label htmlFor="sort-select" style={{ fontSize: '13px', fontWeight: '700', color: 'var(--text-secondary)' }}>
+                Sort By:
+              </label>
+              <select
+                id="sort-select"
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="custom-select"
+              >
+                <option value="lift_desc">Highest Lift Factor</option>
+                <option value="confidence_desc">Highest Confidence %</option>
+                <option value="support_desc">Highest Support %</option>
+                <option value="lift_asc">Lowest Lift Factor</option>
+              </select>
+            </div>
+
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <span style={{ fontSize: '13px', color: 'var(--text-secondary)', fontWeight: '600' }}>Theme:</span>
-            <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
-              {themes.map(t => (
-                <button
-                  key={t}
-                  onClick={() => setSelectedTheme(t)}
-                  className={`model-tab-btn ${selectedTheme === t ? 'active' : ''}`}
-                  style={{ padding: '4px 10px', fontSize: '11.5px' }}
-                >
-                  {t}
-                </button>
-              ))}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', paddingTop: '12px', borderTop: '1px solid var(--border)' }}>
+            {/* Minimum Lift Range Slider */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+              <Sliders size={18} color="var(--accent-secondary)" />
+              <div>
+                <span style={{ fontSize: '12.5px', fontWeight: '700', color: 'var(--text-primary)' }}>
+                  Min Lift: <strong style={{ color: 'var(--blinkit-green)', fontSize: '14px' }}>{minLift.toFixed(2)}×</strong>
+                </span>
+                <input 
+                  type="range" 
+                  min="1.15" 
+                  max="5.0" 
+                  step="0.05"
+                  value={minLift}
+                  onChange={(e) => setMinLift(parseFloat(e.target.value))}
+                  style={{ width: '180px', cursor: 'pointer', accentColor: 'var(--blinkit-green)', marginLeft: '12px', verticalAlign: 'middle' }}
+                />
+              </div>
+            </div>
+
+            <div style={{ fontSize: '12.5px', color: 'var(--text-muted)' }}>
+              Displaying <strong>{sortedRules.length}</strong> of {ASSOCIATION_RULES.length} mined bundles
             </div>
           </div>
 
-          <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
-            Showing <strong>{filteredRules.length}</strong> of {ASSOCIATION_RULES.length} mined bundles
-          </div>
         </div>
       </div>
 
@@ -90,7 +148,7 @@ export default function AssociationRules() {
               </tr>
             </thead>
             <tbody>
-              {filteredRules.map((rule, idx) => (
+              {sortedRules.map((rule, idx) => (
                 <tr key={idx}>
                   <td style={{ fontWeight: '600', color: 'var(--text-primary)' }}>{rule.antecedent}</td>
                   <td style={{ color: 'var(--blinkit-green)', fontWeight: '600' }}>+ {rule.consequent}</td>
@@ -122,6 +180,13 @@ export default function AssociationRules() {
                   </td>
                 </tr>
               ))}
+              {sortedRules.length === 0 && (
+                <tr>
+                  <td colSpan={7} style={{ textAlign: 'center', padding: '30px', color: 'var(--text-muted)' }}>
+                    No product bundles match your selected filter criteria. Try lowering the minimum lift or clearing the search.
+                  </td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
