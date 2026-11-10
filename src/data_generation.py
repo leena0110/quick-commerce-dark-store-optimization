@@ -33,6 +33,8 @@ warnings.filterwarnings('ignore')
 # ==============================================================================
 # CONFIGURATION
 # ==============================================================================
+# RANDOM_SEED ensures reproducibility: re-running the script always produces
+# the identical dataset, which is critical for academic reproducibility.
 RANDOM_SEED = 42
 np.random.seed(RANDOM_SEED)
 
@@ -195,6 +197,8 @@ DARK_STORES = {
     "DS_008": {"name": "Store-Marathahalli", "demand_multiplier": 0.90, "area_type": "suburban"},
 }
 
+# Payment method distribution reflects typical Indian quick-commerce patterns.
+# UPI dominates (~45%) due to widespread adoption of apps like PhonePe and GPay.
 PAYMENT_TYPES = ["UPI", "Credit Card", "Debit Card", "Cash on Delivery", "Wallet"]
 PAYMENT_WEIGHTS = [0.45, 0.15, 0.10, 0.15, 0.15]
 
@@ -296,7 +300,8 @@ def generate_basket(product_df, hour, is_weekend, month, rng):
     4. Fill remaining slots with category-appropriate random products
     5. Assign realistic quantities and discounts
     """
-    # Basket size: skewed towards 2-4 items
+    # Basket size: skewed towards 2-4 items (realistic for quick-commerce)
+    # Very small (1-item) and very large (5-6 item) baskets are less common.
     basket_sizes = [1, 2, 3, 4, 5, 6]
     basket_weights = [0.12, 0.25, 0.28, 0.20, 0.10, 0.05]
     basket_size = rng.choice(basket_sizes, p=basket_weights)
