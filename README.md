@@ -21,7 +21,7 @@ The goal is to help Blinkit's dark stores (small warehouses that store products 
 | Dataset | Source | Size |
 |---|---|---|
 | Product catalogue (SKUs) | Scraped from real Blinkit app | 609 products |
-| Daily transaction logs | Synthetically generated using real patterns from Redseer 2022 & Bain 2023 research | ~106,000 order-item rows |
+| Daily transaction logs | Generated using real patterns from Redseer 2022 & Bain 2023 research | ~106,000 order-item rows |
 | Daily aggregated demand | Derived from transactions | 184 days (Apr–Sep 2026) |
 
 > The transactions are **synthetic** (computer-generated) but follow **real-world patterns** like weekend spikes, evening peaks, and category distributions documented in industry research.
