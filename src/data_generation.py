@@ -203,19 +203,23 @@ PAYMENT_WEIGHTS = [0.45, 0.15, 0.10, 0.15, 0.15]
 # ==============================================================================
 
 def build_product_lookup():
-    """Build a flat list of all products with their attributes."""
+    """
+    Build a flat list of all products with their attributes.
+    Assigns a sequential Product_ID to each product entry.
+    Returns a DataFrame with one row per product.
+    """
     products = []
     pid = 1
     for category, items in PRODUCT_CATALOGUE.items():
         for name, price, demand_level, morning_w, evening_w in items:
             products.append({
-                "Product_ID": f"P{pid:03d}",
+                "Product_ID": f"P{pid:03d}",   # zero-padded 3-digit ID
                 "Product_Name": name,
                 "Product_Category": category,
                 "Unit_Price": price,
                 "Demand_Level": demand_level,
-                "Morning_Weight": morning_w,
-                "Evening_Weight": evening_w,
+                "Morning_Weight": morning_w,    # demand multiplier for morning hours
+                "Evening_Weight": evening_w,    # demand multiplier for evening hours
             })
             pid += 1
     return pd.DataFrame(products)
