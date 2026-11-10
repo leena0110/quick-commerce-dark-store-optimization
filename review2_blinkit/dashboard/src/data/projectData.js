@@ -70,23 +70,35 @@ export const CATEGORY_STATS = [
   { category: "Other",              skus: 144, avgMrp: 110, avgPrice: 92,  discount: 16.4 },
 ];
 
-// Simulated 30-day Sep 2026 forecast series (matches chart 04 outputs)
-export const FORECAST_SERIES = Array.from({ length: 30 }, (_, i) => {
-  const base = 910 + Math.sin(i * 0.9) * 80 + (i % 7 < 2 ? 180 : 0);
-  const noise = (Math.random() - 0.5) * 40;
-  const actual = Math.round(base + noise);
-  return {
-    day: i + 1,
-    date: `Sep ${i + 1}`,
-    actual,
-    xgboost:       Math.round(actual + (Math.random() - 0.5) * 120),
-    sarima:        Math.round(actual + (Math.random() - 0.5) * 130),
-    holtWinters:   Math.round(actual + (Math.random() - 0.5) * 135),
-    movingAvg:     Math.round(actual + (Math.random() - 0.5) * 165),
-    seasonalNaive: Math.round(actual + (Math.random() - 0.5) * 180),
-    naive:         Math.round(actual + (Math.random() - 0.5) * 195),
-  };
-});
+// Multi-category forecasting series generator
+const generateCategorySeries = (baseLevel, weekendBoost, vol) => {
+  return Array.from({ length: 30 }, (_, i) => {
+    const isWeekend = (i % 7 === 5 || i % 7 === 6);
+    const dayBase = baseLevel + Math.sin(i * 0.85) * (vol * 0.4) + (isWeekend ? weekendBoost : 0);
+    const actual = Math.round(dayBase + (Math.sin(i * 1.5) * vol * 0.25));
+    return {
+      day: i + 1,
+      date: `Sep ${i + 1}`,
+      actual,
+      xgboost:       Math.round(actual + Math.sin(i) * (vol * 0.28)),
+      sarima:        Math.round(actual + Math.cos(i) * (vol * 0.30)),
+      holtWinters:   Math.round(actual + Math.sin(i * 1.2) * (vol * 0.32)),
+      movingAvg:     Math.round(actual + (vol * 0.45)),
+      seasonalNaive: Math.round(actual - (vol * 0.48)),
+      naive:         Math.round(actual + (Math.cos(i * 2) * vol * 0.52)),
+    };
+  });
+};
+
+export const CATEGORY_FORECAST_DATA = {
+  all: generateCategorySeries(910, 180, 70),
+  dairy: generateCategorySeries(320, 85, 30),
+  snacks: generateCategorySeries(240, 60, 25),
+  produce: generateCategorySeries(190, 35, 20),
+  beverages: generateCategorySeries(160, 45, 18),
+};
+
+export const FORECAST_SERIES = CATEGORY_FORECAST_DATA.all;
 
 export const WORKFLOW_STEPS = [
   {

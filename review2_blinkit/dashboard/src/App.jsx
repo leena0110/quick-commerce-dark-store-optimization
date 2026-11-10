@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import Sidebar from './components/Sidebar';
@@ -11,12 +11,14 @@ import Literature from './pages/Literature';
 import Recommendations from './pages/Recommendations';
 
 export default function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+
   return (
     <ThemeProvider>
       <BrowserRouter>
         <div className="app-layout">
-          <Sidebar />
-          <main className="main-content">
+          <Sidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
+          <main className={`main-content ${sidebarOpen ? 'sidebar-expanded' : 'sidebar-collapsed'}`}>
             <Routes>
               <Route path="/" element={<Overview />} />
               <Route path="/forecasting" element={<Forecasting />} />
