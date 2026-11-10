@@ -384,3 +384,19 @@ The names of quick-commerce platforms are used only to provide business context 
 **Course:** 23CSE452 — Business Analytics
 
 **Project:** Quick-Commerce Dark Store Inventory & Bundling Optimization
+
+---
+
+## Review 2 Checklist
+
+The following tasks are planned for Review 2:
+
+- [ ] Perform Association Rule Mining using the Apriori algorithm on basket-level transaction data
+- [ ] Evaluate rules using Support, Confidence, and Lift metrics
+- [ ] Filter high-confidence rules for bundling recommendations
+- [ ] Apply ARIMA / SARIMA on selected high-demand SKUs for time-series demand forecasting
+- [ ] Explore Prophet as an alternative forecasting model
+- [ ] Compare time-series model performance against Review 1 regression baselines
+- [ ] Visualize discovered product bundles and forecasted demand trends
+- [ ] Document business recommendations for bundle promotions and inventory pre-stocking
+
