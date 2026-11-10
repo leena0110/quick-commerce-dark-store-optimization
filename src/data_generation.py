@@ -226,7 +226,12 @@ def build_product_lookup():
 
 
 def get_demand_weight(demand_level):
-    """Convert demand level to a sampling weight."""
+    """
+    Convert a demand level string to a numeric sampling weight.
+    High-demand products are sampled 6x more often than low-demand ones.
+    Weights: high=3.0, medium=1.5, low=0.5
+    """
+    # Weights control how often a product is chosen as the anchor item in a basket
     return {"high": 3.0, "medium": 1.5, "low": 0.5}[demand_level]
 
 
@@ -236,6 +241,7 @@ def get_hour_multiplier(hour):
     Peaks: 7-9 AM (breakfast rush), 11 AM-1 PM (lunch prep), 6-9 PM (evening/dinner).
     Low: 12 AM - 6 AM.
     """
+    # Each value is a relative demand multiplier (1.0 = peak demand at 7-9 PM)
     hourly_pattern = {
         0: 0.05, 1: 0.02, 2: 0.01, 3: 0.01, 4: 0.01, 5: 0.03,
         6: 0.15, 7: 0.60, 8: 0.85, 9: 0.70, 10: 0.50, 11: 0.65,
