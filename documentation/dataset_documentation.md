@@ -326,3 +326,16 @@ The product catalogue (`data/raw/product_catalogue.csv`) defines the 58 products
 | P049 | Dish Soap (500ml) | Household | 60 | medium | 0.9 | 1.1 |
 
 `Morning_Weight` and `Evening_Weight` are multipliers applied during data generation to model time-of-day demand patterns.
+
+---
+
+## 18. Notes on Co-Purchase Probability Design
+
+The co-purchase probabilities embedded in `CO_PURCHASE_RULES` were designed to reflect common shopping patterns observed in Indian quick-commerce:
+
+- **Staple pairings** (e.g., Rice + Dal, Onion + Tomato) have higher probabilities (35–45%) as they are frequently bought together for cooking.
+- **Snack + Beverage pairings** (e.g., Chips + Soft Drink, Popcorn + Soft Drink) also carry higher probabilities (~30–45%) due to impulse co-purchase behavior.
+- **Personal care bundles** (e.g., Soap + Shampoo, Toothpaste + Soap) have moderate probabilities (15–30%).
+- **Reverse co-purchase** relationships are also captured at 60% of the forward probability to reflect bidirectional purchase association.
+
+These rules are intentionally embedded in the data generation and are **not** directly visible in the dataset — they must be discovered through Association Rule Mining in Review 2.
